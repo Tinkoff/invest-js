@@ -2,7 +2,7 @@
 
 SDK для работы с OpenAPI Тинькофф Инвестиции, который можно использовать для создания торговых роботов.
 
-`npm i @tinkoff/invest-openapi-js-sdk --save`
+`npm i @tinkoff/invest-js --save`
 
 
 ## Документация
@@ -37,5 +37,16 @@ SDK для работы с OpenAPI Тинькофф Инвестиции, кот
 Более подробно в [документации](https://tinkoffcreditsystems.github.io/invest-openapi/env/)
 
 ```typescript
+import { OpenAPIClient } from '@tinkoff/invest-js';
 
+const client = new OpenAPIClient({
+  token: process.env.TOKEN as string,
+});
+
+client.instruments.shares({}, (x, y) => {
+  if (x) {
+    console.log(x);
+  }
+  console.log(x, y!.instruments.filter(x => x.ticker ==='AAPL'));
+});
 ```

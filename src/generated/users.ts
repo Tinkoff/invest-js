@@ -19,6 +19,7 @@ export interface ProtoGrpcType {
         api: {
           contract: {
             v1: {
+              AccessLevel: EnumTypeDefinition
               Account: MessageTypeDefinition
               AccountStatus: EnumTypeDefinition
               AccountType: EnumTypeDefinition
@@ -31,6 +32,7 @@ export interface ProtoGrpcType {
               GetUserTariffRequest: MessageTypeDefinition
               GetUserTariffResponse: MessageTypeDefinition
               MoneyValue: MessageTypeDefinition
+              Ping: MessageTypeDefinition
               Quotation: MessageTypeDefinition
               SecurityTradingStatus: EnumTypeDefinition
               StreamLimit: MessageTypeDefinition

@@ -24,6 +24,7 @@ export interface ProtoGrpcType {
               GetStopOrdersRequest: MessageTypeDefinition
               GetStopOrdersResponse: MessageTypeDefinition
               MoneyValue: MessageTypeDefinition
+              Ping: MessageTypeDefinition
               PostStopOrderRequest: MessageTypeDefinition
               PostStopOrderResponse: MessageTypeDefinition
               Quotation: MessageTypeDefinition

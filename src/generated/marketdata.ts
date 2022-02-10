@@ -45,6 +45,7 @@ export interface ProtoGrpcType {
               OrderBook: MessageTypeDefinition
               OrderBookInstrument: MessageTypeDefinition
               OrderBookSubscription: MessageTypeDefinition
+              Ping: MessageTypeDefinition
               Quotation: MessageTypeDefinition
               SecurityTradingStatus: EnumTypeDefinition
               SubscribeCandlesRequest: MessageTypeDefinition

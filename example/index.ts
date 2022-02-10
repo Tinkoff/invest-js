@@ -1,11 +1,14 @@
-import { OpenAPIClient } from '@tinkoff/invest-openapi-js-sdk';
+import { OpenAPIClient } from '@tinkoff/invest-js';
 import { InstrumentIdType } from '../build/generated/tinkoff/public/invest/api/contract/v1/InstrumentIdType';
 
 const client = new OpenAPIClient({
   token: process.env.TOKEN as string,
 });
-
+//
 client.instruments.shares({}, (x, y) => {
+  if (x) {
+    console.log(x);
+  }
   console.log(x, y!.instruments.filter(x => x.ticker ==='AAPL'));
 });
 

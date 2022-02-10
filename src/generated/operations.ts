@@ -19,6 +19,13 @@ export interface ProtoGrpcType {
         api: {
           contract: {
             v1: {
+              BrokerReport: MessageTypeDefinition
+              BrokerReportRequest: MessageTypeDefinition
+              BrokerReportResponse: MessageTypeDefinition
+              GenerateBrokerReportRequest: MessageTypeDefinition
+              GenerateBrokerReportResponse: MessageTypeDefinition
+              GetBrokerReportRequest: MessageTypeDefinition
+              GetBrokerReportResponse: MessageTypeDefinition
               MoneyValue: MessageTypeDefinition
               Operation: MessageTypeDefinition
               OperationState: EnumTypeDefinition
@@ -26,9 +33,11 @@ export interface ProtoGrpcType {
               OperationsRequest: MessageTypeDefinition
               OperationsResponse: MessageTypeDefinition
               OperationsService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_OperationsServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_OperationsServiceDefinition }
+              Ping: MessageTypeDefinition
               PortfolioPosition: MessageTypeDefinition
               PortfolioRequest: MessageTypeDefinition
               PortfolioResponse: MessageTypeDefinition
+              PositionsFutures: MessageTypeDefinition
               PositionsRequest: MessageTypeDefinition
               PositionsResponse: MessageTypeDefinition
               PositionsSecurities: MessageTypeDefinition

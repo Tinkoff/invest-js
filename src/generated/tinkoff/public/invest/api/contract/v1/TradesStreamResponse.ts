@@ -1,21 +1,16 @@
 // Original file: investAPI/src/docs/contracts/orders.proto
 
-import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
-import type { OrderDirection as _tinkoff_public_invest_api_contract_v1_OrderDirection } from '../../../../../../tinkoff/public/invest/api/contract/v1/OrderDirection';
-import type { OrderTrade as _tinkoff_public_invest_api_contract_v1_OrderTrade, OrderTrade__Output as _tinkoff_public_invest_api_contract_v1_OrderTrade__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/OrderTrade';
+import type { OrderTrades as _tinkoff_public_invest_api_contract_v1_OrderTrades, OrderTrades__Output as _tinkoff_public_invest_api_contract_v1_OrderTrades__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/OrderTrades';
+import type { Ping as _tinkoff_public_invest_api_contract_v1_Ping, Ping__Output as _tinkoff_public_invest_api_contract_v1_Ping__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/Ping';
 
 export interface TradesStreamResponse {
-  'orderId'?: (string);
-  'createdAt'?: (_google_protobuf_Timestamp | null);
-  'direction'?: (_tinkoff_public_invest_api_contract_v1_OrderDirection | keyof typeof _tinkoff_public_invest_api_contract_v1_OrderDirection);
-  'figi'?: (string);
-  'trades'?: (_tinkoff_public_invest_api_contract_v1_OrderTrade)[];
+  'orderTrades'?: (_tinkoff_public_invest_api_contract_v1_OrderTrades | null);
+  'ping'?: (_tinkoff_public_invest_api_contract_v1_Ping | null);
+  'payload'?: "orderTrades"|"ping";
 }
 
 export interface TradesStreamResponse__Output {
-  'orderId': (string);
-  'createdAt': (_google_protobuf_Timestamp__Output | null);
-  'direction': (keyof typeof _tinkoff_public_invest_api_contract_v1_OrderDirection);
-  'figi': (string);
-  'trades': (_tinkoff_public_invest_api_contract_v1_OrderTrade__Output)[];
+  'orderTrades'?: (_tinkoff_public_invest_api_contract_v1_OrderTrades__Output | null);
+  'ping'?: (_tinkoff_public_invest_api_contract_v1_Ping__Output | null);
+  'payload': "orderTrades"|"ping";
 }

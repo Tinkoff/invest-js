@@ -23,15 +23,23 @@ export interface ProtoGrpcType {
         api: {
           contract: {
             v1: {
+              AccessLevel: EnumTypeDefinition
               Account: MessageTypeDefinition
               AccountStatus: EnumTypeDefinition
               AccountType: EnumTypeDefinition
+              BrokerReport: MessageTypeDefinition
+              BrokerReportRequest: MessageTypeDefinition
+              BrokerReportResponse: MessageTypeDefinition
               CancelOrderRequest: MessageTypeDefinition
               CancelOrderResponse: MessageTypeDefinition
               CloseSandboxAccountRequest: MessageTypeDefinition
               CloseSandboxAccountResponse: MessageTypeDefinition
+              GenerateBrokerReportRequest: MessageTypeDefinition
+              GenerateBrokerReportResponse: MessageTypeDefinition
               GetAccountsRequest: MessageTypeDefinition
               GetAccountsResponse: MessageTypeDefinition
+              GetBrokerReportRequest: MessageTypeDefinition
+              GetBrokerReportResponse: MessageTypeDefinition
               GetInfoRequest: MessageTypeDefinition
               GetInfoResponse: MessageTypeDefinition
               GetMarginAttributesRequest: MessageTypeDefinition
@@ -55,12 +63,15 @@ export interface ProtoGrpcType {
               OrderStage: MessageTypeDefinition
               OrderState: MessageTypeDefinition
               OrderTrade: MessageTypeDefinition
+              OrderTrades: MessageTypeDefinition
               OrderType: EnumTypeDefinition
               OrdersService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_OrdersServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_OrdersServiceDefinition }
               OrdersStreamService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_OrdersStreamServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_OrdersStreamServiceDefinition }
+              Ping: MessageTypeDefinition
               PortfolioPosition: MessageTypeDefinition
               PortfolioRequest: MessageTypeDefinition
               PortfolioResponse: MessageTypeDefinition
+              PositionsFutures: MessageTypeDefinition
               PositionsRequest: MessageTypeDefinition
               PositionsResponse: MessageTypeDefinition
               PositionsSecurities: MessageTypeDefinition

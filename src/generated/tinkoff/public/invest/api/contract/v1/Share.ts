@@ -1,5 +1,6 @@
 // Original file: investAPI/src/docs/contracts/instruments.proto
 
+import type { Quotation as _tinkoff_public_invest_api_contract_v1_Quotation, Quotation__Output as _tinkoff_public_invest_api_contract_v1_Quotation__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/Quotation';
 import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 import type { MoneyValue as _tinkoff_public_invest_api_contract_v1_MoneyValue, MoneyValue__Output as _tinkoff_public_invest_api_contract_v1_MoneyValue__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/MoneyValue';
 import type { SecurityTradingStatus as _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/SecurityTradingStatus';
@@ -13,12 +14,12 @@ export interface Share {
   'isin'?: (string);
   'lot'?: (number);
   'currency'?: (string);
-  'klong'?: (number | string);
-  'kshort'?: (number | string);
-  'dlong'?: (number | string);
-  'dshort'?: (number | string);
-  'dlongMin'?: (number | string);
-  'dshortMin'?: (number | string);
+  'klong'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'kshort'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dlong'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dshort'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dlongMin'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dshortMin'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'shortEnabledFlag'?: (boolean);
   'name'?: (string);
   'exchange'?: (string);
@@ -35,7 +36,7 @@ export interface Share {
   'sellAvailableFlag'?: (boolean);
   'divYieldFlag'?: (boolean);
   'shareType'?: (_tinkoff_public_invest_api_contract_v1_ShareType | keyof typeof _tinkoff_public_invest_api_contract_v1_ShareType);
-  'minPriceIncrement'?: (number | string);
+  'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
 }
 
@@ -46,12 +47,12 @@ export interface Share__Output {
   'isin': (string);
   'lot': (number);
   'currency': (string);
-  'klong': (number);
-  'kshort': (number);
-  'dlong': (number);
-  'dshort': (number);
-  'dlongMin': (number);
-  'dshortMin': (number);
+  'klong': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'kshort': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dlong': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dshort': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dlongMin': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dshortMin': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'shortEnabledFlag': (boolean);
   'name': (string);
   'exchange': (string);
@@ -68,6 +69,6 @@ export interface Share__Output {
   'sellAvailableFlag': (boolean);
   'divYieldFlag': (boolean);
   'shareType': (keyof typeof _tinkoff_public_invest_api_contract_v1_ShareType);
-  'minPriceIncrement': (number);
+  'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
 }

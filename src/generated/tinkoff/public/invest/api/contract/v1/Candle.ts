@@ -12,7 +12,7 @@ export interface Candle {
   'high'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'low'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'close'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
-  'value'?: (number | string | Long);
+  'volume'?: (number | string | Long);
   'time'?: (_google_protobuf_Timestamp | null);
 }
 
@@ -23,6 +23,6 @@ export interface Candle__Output {
   'high': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'low': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'close': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
-  'value': (string);
+  'volume': (string);
   'time': (_google_protobuf_Timestamp__Output | null);
 }

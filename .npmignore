@@ -2,10 +2,12 @@
 node_modules
 package-lock.json
 .prettierrc
-rollup.config.js
+.gitmodules
+.gitignore
 tsconfig.json
 typedoc.js
 tools
 src
 example
 doc
+investAPI

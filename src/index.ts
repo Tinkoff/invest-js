@@ -36,7 +36,7 @@ export const { MarketDataService, MarketDataStreamService } = load<MarketdataTyp
 
 interface OpenAPIClientOptions {
   token: string;
-  url: string;
+  url?: string;
 }
 class OpenAPIClient {
   token: string;

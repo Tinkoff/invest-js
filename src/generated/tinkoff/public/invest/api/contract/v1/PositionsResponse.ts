@@ -2,12 +2,14 @@
 
 import type { MoneyValue as _tinkoff_public_invest_api_contract_v1_MoneyValue, MoneyValue__Output as _tinkoff_public_invest_api_contract_v1_MoneyValue__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/MoneyValue';
 import type { PositionsSecurities as _tinkoff_public_invest_api_contract_v1_PositionsSecurities, PositionsSecurities__Output as _tinkoff_public_invest_api_contract_v1_PositionsSecurities__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/PositionsSecurities';
+import type { PositionsFutures as _tinkoff_public_invest_api_contract_v1_PositionsFutures, PositionsFutures__Output as _tinkoff_public_invest_api_contract_v1_PositionsFutures__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/PositionsFutures';
 
 export interface PositionsResponse {
   'money'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue)[];
   'blocked'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue)[];
   'securities'?: (_tinkoff_public_invest_api_contract_v1_PositionsSecurities)[];
   'limitsLoadingInProgress'?: (boolean);
+  'futures'?: (_tinkoff_public_invest_api_contract_v1_PositionsFutures)[];
 }
 
 export interface PositionsResponse__Output {
@@ -15,4 +17,5 @@ export interface PositionsResponse__Output {
   'blocked': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output)[];
   'securities': (_tinkoff_public_invest_api_contract_v1_PositionsSecurities__Output)[];
   'limitsLoadingInProgress': (boolean);
+  'futures': (_tinkoff_public_invest_api_contract_v1_PositionsFutures__Output)[];
 }

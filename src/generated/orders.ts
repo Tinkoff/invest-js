@@ -31,9 +31,11 @@ export interface ProtoGrpcType {
               OrderStage: MessageTypeDefinition
               OrderState: MessageTypeDefinition
               OrderTrade: MessageTypeDefinition
+              OrderTrades: MessageTypeDefinition
               OrderType: EnumTypeDefinition
               OrdersService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_OrdersServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_OrdersServiceDefinition }
               OrdersStreamService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_OrdersStreamServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_OrdersStreamServiceDefinition }
+              Ping: MessageTypeDefinition
               PostOrderRequest: MessageTypeDefinition
               PostOrderResponse: MessageTypeDefinition
               Quotation: MessageTypeDefinition

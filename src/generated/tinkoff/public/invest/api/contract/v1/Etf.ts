@@ -1,5 +1,6 @@
 // Original file: investAPI/src/docs/contracts/instruments.proto
 
+import type { Quotation as _tinkoff_public_invest_api_contract_v1_Quotation, Quotation__Output as _tinkoff_public_invest_api_contract_v1_Quotation__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/Quotation';
 import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 import type { SecurityTradingStatus as _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/SecurityTradingStatus';
 
@@ -10,19 +11,19 @@ export interface Etf {
   'isin'?: (string);
   'lot'?: (number);
   'currency'?: (string);
-  'klong'?: (number | string);
-  'kshort'?: (number | string);
-  'dlong'?: (number | string);
-  'dshort'?: (number | string);
-  'dlongMin'?: (number | string);
-  'dshortMin'?: (number | string);
+  'klong'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'kshort'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dlong'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dshort'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dlongMin'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dshortMin'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'shortEnabledFlag'?: (boolean);
   'name'?: (string);
   'exchange'?: (string);
-  'fixedCommission'?: (number | string);
+  'fixedCommission'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'focusType'?: (string);
   'releasedDate'?: (_google_protobuf_Timestamp | null);
-  'numShares'?: (number | string);
+  'numShares'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'countryOfRisk'?: (string);
   'countryOfRiskName'?: (string);
   'sector'?: (string);
@@ -31,7 +32,7 @@ export interface Etf {
   'otcFlag'?: (boolean);
   'buyAvailableFlag'?: (boolean);
   'sellAvailableFlag'?: (boolean);
-  'minPriceIncrement'?: (number | string);
+  'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
 }
 
@@ -42,19 +43,19 @@ export interface Etf__Output {
   'isin': (string);
   'lot': (number);
   'currency': (string);
-  'klong': (number);
-  'kshort': (number);
-  'dlong': (number);
-  'dshort': (number);
-  'dlongMin': (number);
-  'dshortMin': (number);
+  'klong': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'kshort': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dlong': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dshort': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dlongMin': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dshortMin': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'shortEnabledFlag': (boolean);
   'name': (string);
   'exchange': (string);
-  'fixedCommission': (number);
+  'fixedCommission': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'focusType': (string);
   'releasedDate': (_google_protobuf_Timestamp__Output | null);
-  'numShares': (number);
+  'numShares': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'countryOfRisk': (string);
   'countryOfRiskName': (string);
   'sector': (string);
@@ -63,6 +64,6 @@ export interface Etf__Output {
   'otcFlag': (boolean);
   'buyAvailableFlag': (boolean);
   'sellAvailableFlag': (boolean);
-  'minPriceIncrement': (number);
+  'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
 }

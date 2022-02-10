@@ -3,6 +3,7 @@
 import type { AccountType as _tinkoff_public_invest_api_contract_v1_AccountType } from '../../../../../../tinkoff/public/invest/api/contract/v1/AccountType';
 import type { AccountStatus as _tinkoff_public_invest_api_contract_v1_AccountStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/AccountStatus';
 import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
+import type { AccessLevel as _tinkoff_public_invest_api_contract_v1_AccessLevel } from '../../../../../../tinkoff/public/invest/api/contract/v1/AccessLevel';
 
 export interface Account {
   'id'?: (string);
@@ -11,6 +12,7 @@ export interface Account {
   'status'?: (_tinkoff_public_invest_api_contract_v1_AccountStatus | keyof typeof _tinkoff_public_invest_api_contract_v1_AccountStatus);
   'openedDate'?: (_google_protobuf_Timestamp | null);
   'closedDate'?: (_google_protobuf_Timestamp | null);
+  'accessLevel'?: (_tinkoff_public_invest_api_contract_v1_AccessLevel | keyof typeof _tinkoff_public_invest_api_contract_v1_AccessLevel);
 }
 
 export interface Account__Output {
@@ -20,4 +22,5 @@ export interface Account__Output {
   'status': (keyof typeof _tinkoff_public_invest_api_contract_v1_AccountStatus);
   'openedDate': (_google_protobuf_Timestamp__Output | null);
   'closedDate': (_google_protobuf_Timestamp__Output | null);
+  'accessLevel': (keyof typeof _tinkoff_public_invest_api_contract_v1_AccessLevel);
 }

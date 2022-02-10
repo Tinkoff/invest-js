@@ -1,5 +1,6 @@
 // Original file: investAPI/src/docs/contracts/instruments.proto
 
+import type { Quotation as _tinkoff_public_invest_api_contract_v1_Quotation, Quotation__Output as _tinkoff_public_invest_api_contract_v1_Quotation__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/Quotation';
 import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 import type { SecurityTradingStatus as _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/SecurityTradingStatus';
 
@@ -9,12 +10,12 @@ export interface Future {
   'classCode'?: (string);
   'lot'?: (number);
   'currency'?: (string);
-  'klong'?: (number | string);
-  'kshort'?: (number | string);
-  'dlong'?: (number | string);
-  'dshort'?: (number | string);
-  'dlongMin'?: (number | string);
-  'dshortMin'?: (number | string);
+  'klong'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'kshort'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dlong'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dshort'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dlongMin'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'dshortMin'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'shortEnabledFlag'?: (boolean);
   'name'?: (string);
   'exchange'?: (string);
@@ -23,7 +24,7 @@ export interface Future {
   'futuresType'?: (string);
   'assetType'?: (string);
   'basicAsset'?: (string);
-  'basicAssetSize'?: (number | string);
+  'basicAssetSize'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'countryOfRisk'?: (string);
   'countryOfRiskName'?: (string);
   'sector'?: (string);
@@ -32,7 +33,7 @@ export interface Future {
   'otcFlag'?: (boolean);
   'buyAvailableFlag'?: (boolean);
   'sellAvailableFlag'?: (boolean);
-  'minPriceIncrement'?: (number | string);
+  'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
 }
 
@@ -42,12 +43,12 @@ export interface Future__Output {
   'classCode': (string);
   'lot': (number);
   'currency': (string);
-  'klong': (number);
-  'kshort': (number);
-  'dlong': (number);
-  'dshort': (number);
-  'dlongMin': (number);
-  'dshortMin': (number);
+  'klong': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'kshort': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dlong': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dshort': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dlongMin': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'dshortMin': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'shortEnabledFlag': (boolean);
   'name': (string);
   'exchange': (string);
@@ -56,7 +57,7 @@ export interface Future__Output {
   'futuresType': (string);
   'assetType': (string);
   'basicAsset': (string);
-  'basicAssetSize': (number);
+  'basicAssetSize': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'countryOfRisk': (string);
   'countryOfRiskName': (string);
   'sector': (string);
@@ -65,6 +66,6 @@ export interface Future__Output {
   'otcFlag': (boolean);
   'buyAvailableFlag': (boolean);
   'sellAvailableFlag': (boolean);
-  'minPriceIncrement': (number);
+  'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
 }

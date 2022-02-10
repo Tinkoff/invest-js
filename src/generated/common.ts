@@ -7,6 +7,11 @@ type SubtypeConstructor<Constructor extends new (...args: any) => any, Subtype> 
 };
 
 export interface ProtoGrpcType {
+  google: {
+    protobuf: {
+      Timestamp: MessageTypeDefinition
+    }
+  }
   tinkoff: {
     public: {
       invest: {
@@ -14,6 +19,7 @@ export interface ProtoGrpcType {
           contract: {
             v1: {
               MoneyValue: MessageTypeDefinition
+              Ping: MessageTypeDefinition
               Quotation: MessageTypeDefinition
               SecurityTradingStatus: EnumTypeDefinition
             }
