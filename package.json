@@ -1,6 +1,6 @@
 {
-  "name": "@tinkoff/invest-openapi-js-sdk",
-  "version": "2.0.0",
+  "name": "@tinkoff/invest-js",
+  "version": "1.0.0-alpha.0",
   "description": "Tinkoff Invest OpenAPI Client",
   "types": "./build/index.d.ts",
   "engines": {
@@ -14,13 +14,11 @@
   },
   "scripts": {
     "build": "sh ./tools/build.sh",
-    "watch": "tsc --watch",
-    "docs": "rm -rf ./doc && typedoc",
-    "types": "swagger-types-generator ./swagger.config.json && npm run docs"
+    "watch": "tsc --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TinkoffCreditSystems/invest-openapi-js-sdk"
+    "url": "https://github.com/Tinkoff/invest-js"
   },
   "keywords": [
     "trading",
