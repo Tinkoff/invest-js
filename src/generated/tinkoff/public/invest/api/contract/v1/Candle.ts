@@ -14,6 +14,7 @@ export interface Candle {
   'close'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'volume'?: (number | string | Long);
   'time'?: (_google_protobuf_Timestamp | null);
+  'lastTradeTs'?: (_google_protobuf_Timestamp | null);
 }
 
 export interface Candle__Output {
@@ -25,4 +26,5 @@ export interface Candle__Output {
   'close': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'volume': (string);
   'time': (_google_protobuf_Timestamp__Output | null);
+  'lastTradeTs': (_google_protobuf_Timestamp__Output | null);
 }

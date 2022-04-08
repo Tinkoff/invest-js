@@ -38,6 +38,7 @@ export interface Share {
   'shareType'?: (_tinkoff_public_invest_api_contract_v1_ShareType | keyof typeof _tinkoff_public_invest_api_contract_v1_ShareType);
   'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
+  'uid'?: (string);
 }
 
 export interface Share__Output {
@@ -71,4 +72,5 @@ export interface Share__Output {
   'shareType': (keyof typeof _tinkoff_public_invest_api_contract_v1_ShareType);
   'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
+  'uid': (string);
 }

@@ -34,6 +34,7 @@ export interface Etf {
   'sellAvailableFlag'?: (boolean);
   'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
+  'uid'?: (string);
 }
 
 export interface Etf__Output {
@@ -66,4 +67,5 @@ export interface Etf__Output {
   'sellAvailableFlag': (boolean);
   'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
+  'uid': (string);
 }

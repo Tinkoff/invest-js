@@ -4,6 +4,7 @@ import type { MoneyValue as _tinkoff_public_invest_api_contract_v1_MoneyValue, M
 import type { OperationState as _tinkoff_public_invest_api_contract_v1_OperationState } from '../../../../../../tinkoff/public/invest/api/contract/v1/OperationState';
 import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 import type { OperationType as _tinkoff_public_invest_api_contract_v1_OperationType } from '../../../../../../tinkoff/public/invest/api/contract/v1/OperationType';
+import type { OperationTrade as _tinkoff_public_invest_api_contract_v1_OperationTrade, OperationTrade__Output as _tinkoff_public_invest_api_contract_v1_OperationTrade__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/OperationTrade';
 import type { Long } from '@grpc/proto-loader';
 
 export interface Operation {
@@ -20,6 +21,7 @@ export interface Operation {
   'date'?: (_google_protobuf_Timestamp | null);
   'type'?: (string);
   'operationType'?: (_tinkoff_public_invest_api_contract_v1_OperationType | keyof typeof _tinkoff_public_invest_api_contract_v1_OperationType);
+  'trades'?: (_tinkoff_public_invest_api_contract_v1_OperationTrade)[];
 }
 
 export interface Operation__Output {
@@ -36,4 +38,5 @@ export interface Operation__Output {
   'date': (_google_protobuf_Timestamp__Output | null);
   'type': (string);
   'operationType': (keyof typeof _tinkoff_public_invest_api_contract_v1_OperationType);
+  'trades': (_tinkoff_public_invest_api_contract_v1_OperationTrade__Output)[];
 }

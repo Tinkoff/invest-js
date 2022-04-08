@@ -20,9 +20,27 @@ export interface ProtoGrpcType {
           contract: {
             v1: {
               AccruedInterest: MessageTypeDefinition
+              Asset: MessageTypeDefinition
+              AssetBond: MessageTypeDefinition
+              AssetClearingCertificate: MessageTypeDefinition
+              AssetCurrency: MessageTypeDefinition
+              AssetEtf: MessageTypeDefinition
+              AssetFull: MessageTypeDefinition
+              AssetInstrument: MessageTypeDefinition
+              AssetRequest: MessageTypeDefinition
+              AssetResponse: MessageTypeDefinition
+              AssetSecurity: MessageTypeDefinition
+              AssetShare: MessageTypeDefinition
+              AssetStructuredProduct: MessageTypeDefinition
+              AssetType: EnumTypeDefinition
+              AssetsRequest: MessageTypeDefinition
+              AssetsResponse: MessageTypeDefinition
               Bond: MessageTypeDefinition
               BondResponse: MessageTypeDefinition
               BondsResponse: MessageTypeDefinition
+              Brand: MessageTypeDefinition
+              Coupon: MessageTypeDefinition
+              CouponType: EnumTypeDefinition
               CurrenciesResponse: MessageTypeDefinition
               Currency: MessageTypeDefinition
               CurrencyResponse: MessageTypeDefinition
@@ -35,12 +53,15 @@ export interface ProtoGrpcType {
               FuturesResponse: MessageTypeDefinition
               GetAccruedInterestsRequest: MessageTypeDefinition
               GetAccruedInterestsResponse: MessageTypeDefinition
+              GetBondCouponsRequest: MessageTypeDefinition
+              GetBondCouponsResponse: MessageTypeDefinition
               GetDividendsRequest: MessageTypeDefinition
               GetDividendsResponse: MessageTypeDefinition
               GetFuturesMarginRequest: MessageTypeDefinition
               GetFuturesMarginResponse: MessageTypeDefinition
               Instrument: MessageTypeDefinition
               InstrumentIdType: EnumTypeDefinition
+              InstrumentLink: MessageTypeDefinition
               InstrumentRequest: MessageTypeDefinition
               InstrumentResponse: MessageTypeDefinition
               InstrumentStatus: EnumTypeDefinition
@@ -54,6 +75,7 @@ export interface ProtoGrpcType {
               ShareResponse: MessageTypeDefinition
               ShareType: EnumTypeDefinition
               SharesResponse: MessageTypeDefinition
+              StructuredProductType: EnumTypeDefinition
               TradingDay: MessageTypeDefinition
               TradingSchedule: MessageTypeDefinition
               TradingSchedulesRequest: MessageTypeDefinition

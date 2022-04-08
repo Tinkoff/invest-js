@@ -28,6 +28,7 @@ export interface Instrument {
   'sellAvailableFlag'?: (boolean);
   'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
+  'uid'?: (string);
 }
 
 export interface Instrument__Output {
@@ -55,4 +56,5 @@ export interface Instrument__Output {
   'sellAvailableFlag': (boolean);
   'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
+  'uid': (string);
 }

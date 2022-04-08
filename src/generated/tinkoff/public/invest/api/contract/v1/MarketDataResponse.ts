@@ -9,6 +9,8 @@ import type { Trade as _tinkoff_public_invest_api_contract_v1_Trade, Trade__Outp
 import type { OrderBook as _tinkoff_public_invest_api_contract_v1_OrderBook, OrderBook__Output as _tinkoff_public_invest_api_contract_v1_OrderBook__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/OrderBook';
 import type { TradingStatus as _tinkoff_public_invest_api_contract_v1_TradingStatus, TradingStatus__Output as _tinkoff_public_invest_api_contract_v1_TradingStatus__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/TradingStatus';
 import type { Ping as _tinkoff_public_invest_api_contract_v1_Ping, Ping__Output as _tinkoff_public_invest_api_contract_v1_Ping__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/Ping';
+import type { SubscribeLastPriceResponse as _tinkoff_public_invest_api_contract_v1_SubscribeLastPriceResponse, SubscribeLastPriceResponse__Output as _tinkoff_public_invest_api_contract_v1_SubscribeLastPriceResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/SubscribeLastPriceResponse';
+import type { LastPrice as _tinkoff_public_invest_api_contract_v1_LastPrice, LastPrice__Output as _tinkoff_public_invest_api_contract_v1_LastPrice__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/LastPrice';
 
 export interface MarketDataResponse {
   'subscribeCandlesResponse'?: (_tinkoff_public_invest_api_contract_v1_SubscribeCandlesResponse | null);
@@ -20,7 +22,9 @@ export interface MarketDataResponse {
   'orderbook'?: (_tinkoff_public_invest_api_contract_v1_OrderBook | null);
   'tradingStatus'?: (_tinkoff_public_invest_api_contract_v1_TradingStatus | null);
   'ping'?: (_tinkoff_public_invest_api_contract_v1_Ping | null);
-  'payload'?: "subscribeCandlesResponse"|"subscribeOrderBookResponse"|"subscribeTradesResponse"|"subscribeInfoResponse"|"candle"|"trade"|"orderbook"|"tradingStatus"|"ping";
+  'subscribeLastPriceResponse'?: (_tinkoff_public_invest_api_contract_v1_SubscribeLastPriceResponse | null);
+  'lastPrice'?: (_tinkoff_public_invest_api_contract_v1_LastPrice | null);
+  'payload'?: "subscribeCandlesResponse"|"subscribeOrderBookResponse"|"subscribeTradesResponse"|"subscribeInfoResponse"|"candle"|"trade"|"orderbook"|"tradingStatus"|"ping"|"subscribeLastPriceResponse"|"lastPrice";
 }
 
 export interface MarketDataResponse__Output {
@@ -33,5 +37,7 @@ export interface MarketDataResponse__Output {
   'orderbook'?: (_tinkoff_public_invest_api_contract_v1_OrderBook__Output | null);
   'tradingStatus'?: (_tinkoff_public_invest_api_contract_v1_TradingStatus__Output | null);
   'ping'?: (_tinkoff_public_invest_api_contract_v1_Ping__Output | null);
-  'payload': "subscribeCandlesResponse"|"subscribeOrderBookResponse"|"subscribeTradesResponse"|"subscribeInfoResponse"|"candle"|"trade"|"orderbook"|"tradingStatus"|"ping";
+  'subscribeLastPriceResponse'?: (_tinkoff_public_invest_api_contract_v1_SubscribeLastPriceResponse__Output | null);
+  'lastPrice'?: (_tinkoff_public_invest_api_contract_v1_LastPrice__Output | null);
+  'payload': "subscribeCandlesResponse"|"subscribeOrderBookResponse"|"subscribeTradesResponse"|"subscribeInfoResponse"|"candle"|"trade"|"orderbook"|"tradingStatus"|"ping"|"subscribeLastPriceResponse"|"lastPrice";
 }
