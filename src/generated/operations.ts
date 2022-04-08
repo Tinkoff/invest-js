@@ -22,13 +22,21 @@ export interface ProtoGrpcType {
               BrokerReport: MessageTypeDefinition
               BrokerReportRequest: MessageTypeDefinition
               BrokerReportResponse: MessageTypeDefinition
+              DividendsForeignIssuerReport: MessageTypeDefinition
               GenerateBrokerReportRequest: MessageTypeDefinition
               GenerateBrokerReportResponse: MessageTypeDefinition
+              GenerateDividendsForeignIssuerReportRequest: MessageTypeDefinition
+              GenerateDividendsForeignIssuerReportResponse: MessageTypeDefinition
               GetBrokerReportRequest: MessageTypeDefinition
               GetBrokerReportResponse: MessageTypeDefinition
+              GetDividendsForeignIssuerReportRequest: MessageTypeDefinition
+              GetDividendsForeignIssuerReportResponse: MessageTypeDefinition
+              GetDividendsForeignIssuerRequest: MessageTypeDefinition
+              GetDividendsForeignIssuerResponse: MessageTypeDefinition
               MoneyValue: MessageTypeDefinition
               Operation: MessageTypeDefinition
               OperationState: EnumTypeDefinition
+              OperationTrade: MessageTypeDefinition
               OperationType: EnumTypeDefinition
               OperationsRequest: MessageTypeDefinition
               OperationsResponse: MessageTypeDefinition

@@ -6,6 +6,8 @@ import type { GetCandlesRequest as _tinkoff_public_invest_api_contract_v1_GetCan
 import type { GetCandlesResponse as _tinkoff_public_invest_api_contract_v1_GetCandlesResponse, GetCandlesResponse__Output as _tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetCandlesResponse';
 import type { GetLastPricesRequest as _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, GetLastPricesRequest__Output as _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetLastPricesRequest';
 import type { GetLastPricesResponse as _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse, GetLastPricesResponse__Output as _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetLastPricesResponse';
+import type { GetLastTradesRequest as _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, GetLastTradesRequest__Output as _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetLastTradesRequest';
+import type { GetLastTradesResponse as _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse, GetLastTradesResponse__Output as _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetLastTradesResponse';
 import type { GetOrderBookRequest as _tinkoff_public_invest_api_contract_v1_GetOrderBookRequest, GetOrderBookRequest__Output as _tinkoff_public_invest_api_contract_v1_GetOrderBookRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOrderBookRequest';
 import type { GetOrderBookResponse as _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse, GetOrderBookResponse__Output as _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOrderBookResponse';
 import type { GetTradingStatusRequest as _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest, GetTradingStatusRequest__Output as _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetTradingStatusRequest';
@@ -29,6 +31,15 @@ export interface MarketDataServiceClient extends grpc.Client {
   getLastPrices(argument: _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output>): grpc.ClientUnaryCall;
   getLastPrices(argument: _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output>): grpc.ClientUnaryCall;
   getLastPrices(argument: _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output>): grpc.ClientUnaryCall;
+  
+  GetLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
+  GetLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
+  GetLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
+  GetLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
+  getLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
+  getLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
+  getLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
+  getLastTrades(argument: _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>): grpc.ClientUnaryCall;
   
   GetOrderBook(argument: _tinkoff_public_invest_api_contract_v1_GetOrderBookRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOrderBookResponse__Output>): grpc.ClientUnaryCall;
   GetOrderBook(argument: _tinkoff_public_invest_api_contract_v1_GetOrderBookRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOrderBookResponse__Output>): grpc.ClientUnaryCall;
@@ -55,6 +66,8 @@ export interface MarketDataServiceHandlers extends grpc.UntypedServiceImplementa
   
   GetLastPrices: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetLastPricesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse>;
   
+  GetLastTrades: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetLastTradesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse>;
+  
   GetOrderBook: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetOrderBookRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse>;
   
   GetTradingStatus: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest__Output, _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse>;
@@ -64,6 +77,7 @@ export interface MarketDataServiceHandlers extends grpc.UntypedServiceImplementa
 export interface MarketDataServiceDefinition extends grpc.ServiceDefinition {
   GetCandles: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetCandlesRequest, _tinkoff_public_invest_api_contract_v1_GetCandlesResponse, _tinkoff_public_invest_api_contract_v1_GetCandlesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output>
   GetLastPrices: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse, _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output>
+  GetLastTrades: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse, _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>
   GetOrderBook: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetOrderBookRequest, _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse, _tinkoff_public_invest_api_contract_v1_GetOrderBookRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse__Output>
   GetTradingStatus: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest, _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse, _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest__Output, _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse__Output>
 }

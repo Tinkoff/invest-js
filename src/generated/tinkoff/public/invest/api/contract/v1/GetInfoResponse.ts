@@ -5,10 +5,12 @@ export interface GetInfoResponse {
   'premStatus'?: (boolean);
   'qualStatus'?: (boolean);
   'qualifiedForWorkWith'?: (string)[];
+  'tariff'?: (string);
 }
 
 export interface GetInfoResponse__Output {
   'premStatus': (boolean);
   'qualStatus': (boolean);
   'qualifiedForWorkWith': (string)[];
+  'tariff': (string);
 }

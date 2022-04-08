@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/invest-js",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "Tinkoff Invest OpenAPI Client",
   "types": "./build/index.d.ts",
   "engines": {
@@ -14,6 +14,7 @@
   },
   "scripts": {
     "build": "sh ./tools/build.sh",
+    "gen": "sh ./tools/gen.sh",
     "watch": "tsc --watch"
   },
   "repository": {

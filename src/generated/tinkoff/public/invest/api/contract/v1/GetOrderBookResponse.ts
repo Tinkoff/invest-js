@@ -10,6 +10,8 @@ export interface GetOrderBookResponse {
   'asks'?: (_tinkoff_public_invest_api_contract_v1_Order)[];
   'lastPrice'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'closePrice'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'limitUp'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'limitDown'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
 }
 
 export interface GetOrderBookResponse__Output {
@@ -19,4 +21,6 @@ export interface GetOrderBookResponse__Output {
   'asks': (_tinkoff_public_invest_api_contract_v1_Order__Output)[];
   'lastPrice': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'closePrice': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'limitUp': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'limitDown': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
 }

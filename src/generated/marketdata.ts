@@ -28,6 +28,8 @@ export interface ProtoGrpcType {
               GetCandlesResponse: MessageTypeDefinition
               GetLastPricesRequest: MessageTypeDefinition
               GetLastPricesResponse: MessageTypeDefinition
+              GetLastTradesRequest: MessageTypeDefinition
+              GetLastTradesResponse: MessageTypeDefinition
               GetOrderBookRequest: MessageTypeDefinition
               GetOrderBookResponse: MessageTypeDefinition
               GetTradingStatusRequest: MessageTypeDefinition
@@ -36,6 +38,8 @@ export interface ProtoGrpcType {
               InfoInstrument: MessageTypeDefinition
               InfoSubscription: MessageTypeDefinition
               LastPrice: MessageTypeDefinition
+              LastPriceInstrument: MessageTypeDefinition
+              LastPriceSubscription: MessageTypeDefinition
               MarketDataRequest: MessageTypeDefinition
               MarketDataResponse: MessageTypeDefinition
               MarketDataService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_MarketDataServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_MarketDataServiceDefinition }
@@ -52,6 +56,8 @@ export interface ProtoGrpcType {
               SubscribeCandlesResponse: MessageTypeDefinition
               SubscribeInfoRequest: MessageTypeDefinition
               SubscribeInfoResponse: MessageTypeDefinition
+              SubscribeLastPriceRequest: MessageTypeDefinition
+              SubscribeLastPriceResponse: MessageTypeDefinition
               SubscribeOrderBookRequest: MessageTypeDefinition
               SubscribeOrderBookResponse: MessageTypeDefinition
               SubscribeTradesRequest: MessageTypeDefinition

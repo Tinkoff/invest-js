@@ -34,12 +34,19 @@ export interface ProtoGrpcType {
               CancelOrderResponse: MessageTypeDefinition
               CloseSandboxAccountRequest: MessageTypeDefinition
               CloseSandboxAccountResponse: MessageTypeDefinition
+              DividendsForeignIssuerReport: MessageTypeDefinition
               GenerateBrokerReportRequest: MessageTypeDefinition
               GenerateBrokerReportResponse: MessageTypeDefinition
+              GenerateDividendsForeignIssuerReportRequest: MessageTypeDefinition
+              GenerateDividendsForeignIssuerReportResponse: MessageTypeDefinition
               GetAccountsRequest: MessageTypeDefinition
               GetAccountsResponse: MessageTypeDefinition
               GetBrokerReportRequest: MessageTypeDefinition
               GetBrokerReportResponse: MessageTypeDefinition
+              GetDividendsForeignIssuerReportRequest: MessageTypeDefinition
+              GetDividendsForeignIssuerReportResponse: MessageTypeDefinition
+              GetDividendsForeignIssuerRequest: MessageTypeDefinition
+              GetDividendsForeignIssuerResponse: MessageTypeDefinition
               GetInfoRequest: MessageTypeDefinition
               GetInfoResponse: MessageTypeDefinition
               GetMarginAttributesRequest: MessageTypeDefinition
@@ -54,6 +61,7 @@ export interface ProtoGrpcType {
               OpenSandboxAccountResponse: MessageTypeDefinition
               Operation: MessageTypeDefinition
               OperationState: EnumTypeDefinition
+              OperationTrade: MessageTypeDefinition
               OperationType: EnumTypeDefinition
               OperationsRequest: MessageTypeDefinition
               OperationsResponse: MessageTypeDefinition

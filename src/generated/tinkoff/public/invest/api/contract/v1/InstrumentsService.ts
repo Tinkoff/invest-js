@@ -2,6 +2,10 @@
 
 import type * as grpc from '@grpc/grpc-js'
 import type { MethodDefinition } from '@grpc/proto-loader'
+import type { AssetRequest as _tinkoff_public_invest_api_contract_v1_AssetRequest, AssetRequest__Output as _tinkoff_public_invest_api_contract_v1_AssetRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/AssetRequest';
+import type { AssetResponse as _tinkoff_public_invest_api_contract_v1_AssetResponse, AssetResponse__Output as _tinkoff_public_invest_api_contract_v1_AssetResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/AssetResponse';
+import type { AssetsRequest as _tinkoff_public_invest_api_contract_v1_AssetsRequest, AssetsRequest__Output as _tinkoff_public_invest_api_contract_v1_AssetsRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/AssetsRequest';
+import type { AssetsResponse as _tinkoff_public_invest_api_contract_v1_AssetsResponse, AssetsResponse__Output as _tinkoff_public_invest_api_contract_v1_AssetsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/AssetsResponse';
 import type { BondResponse as _tinkoff_public_invest_api_contract_v1_BondResponse, BondResponse__Output as _tinkoff_public_invest_api_contract_v1_BondResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/BondResponse';
 import type { BondsResponse as _tinkoff_public_invest_api_contract_v1_BondsResponse, BondsResponse__Output as _tinkoff_public_invest_api_contract_v1_BondsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/BondsResponse';
 import type { CurrenciesResponse as _tinkoff_public_invest_api_contract_v1_CurrenciesResponse, CurrenciesResponse__Output as _tinkoff_public_invest_api_contract_v1_CurrenciesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/CurrenciesResponse';
@@ -12,6 +16,8 @@ import type { FutureResponse as _tinkoff_public_invest_api_contract_v1_FutureRes
 import type { FuturesResponse as _tinkoff_public_invest_api_contract_v1_FuturesResponse, FuturesResponse__Output as _tinkoff_public_invest_api_contract_v1_FuturesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/FuturesResponse';
 import type { GetAccruedInterestsRequest as _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsRequest, GetAccruedInterestsRequest__Output as _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetAccruedInterestsRequest';
 import type { GetAccruedInterestsResponse as _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsResponse, GetAccruedInterestsResponse__Output as _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetAccruedInterestsResponse';
+import type { GetBondCouponsRequest as _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, GetBondCouponsRequest__Output as _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetBondCouponsRequest';
+import type { GetBondCouponsResponse as _tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse, GetBondCouponsResponse__Output as _tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetBondCouponsResponse';
 import type { GetDividendsRequest as _tinkoff_public_invest_api_contract_v1_GetDividendsRequest, GetDividendsRequest__Output as _tinkoff_public_invest_api_contract_v1_GetDividendsRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetDividendsRequest';
 import type { GetDividendsResponse as _tinkoff_public_invest_api_contract_v1_GetDividendsResponse, GetDividendsResponse__Output as _tinkoff_public_invest_api_contract_v1_GetDividendsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetDividendsResponse';
 import type { GetFuturesMarginRequest as _tinkoff_public_invest_api_contract_v1_GetFuturesMarginRequest, GetFuturesMarginRequest__Output as _tinkoff_public_invest_api_contract_v1_GetFuturesMarginRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetFuturesMarginRequest';
@@ -106,6 +112,33 @@ export interface InstrumentsServiceClient extends grpc.Client {
   getAccruedInterests(argument: _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetAccruedInterestsResponse__Output>): grpc.ClientUnaryCall;
   getAccruedInterests(argument: _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetAccruedInterestsResponse__Output>): grpc.ClientUnaryCall;
   
+  GetAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  GetAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  GetAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  GetAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  getAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  getAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  getAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  getAssetBy(argument: _tinkoff_public_invest_api_contract_v1_AssetRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetResponse__Output>): grpc.ClientUnaryCall;
+  
+  GetAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  GetAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  GetAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  GetAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  getAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  getAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  getAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  getAssets(argument: _tinkoff_public_invest_api_contract_v1_AssetsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>): grpc.ClientUnaryCall;
+  
+  GetBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  GetBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  GetBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  GetBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  getBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  getBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  getBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  getBondCoupons(argument: _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>): grpc.ClientUnaryCall;
+  
   GetDividends(argument: _tinkoff_public_invest_api_contract_v1_GetDividendsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetDividendsResponse__Output>): grpc.ClientUnaryCall;
   GetDividends(argument: _tinkoff_public_invest_api_contract_v1_GetDividendsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetDividendsResponse__Output>): grpc.ClientUnaryCall;
   GetDividends(argument: _tinkoff_public_invest_api_contract_v1_GetDividendsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetDividendsResponse__Output>): grpc.ClientUnaryCall;
@@ -181,6 +214,12 @@ export interface InstrumentsServiceHandlers extends grpc.UntypedServiceImplement
   
   GetAccruedInterests: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetAccruedInterestsRequest__Output, _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsResponse>;
   
+  GetAssetBy: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_AssetRequest__Output, _tinkoff_public_invest_api_contract_v1_AssetResponse>;
+  
+  GetAssets: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_AssetsRequest__Output, _tinkoff_public_invest_api_contract_v1_AssetsResponse>;
+  
+  GetBondCoupons: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest__Output, _tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse>;
+  
   GetDividends: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetDividendsRequest__Output, _tinkoff_public_invest_api_contract_v1_GetDividendsResponse>;
   
   GetFuturesMargin: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetFuturesMarginRequest__Output, _tinkoff_public_invest_api_contract_v1_GetFuturesMarginResponse>;
@@ -205,6 +244,9 @@ export interface InstrumentsServiceDefinition extends grpc.ServiceDefinition {
   FutureBy: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentRequest, _tinkoff_public_invest_api_contract_v1_FutureResponse, _tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_FutureResponse__Output>
   Futures: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentsRequest, _tinkoff_public_invest_api_contract_v1_FuturesResponse, _tinkoff_public_invest_api_contract_v1_InstrumentsRequest__Output, _tinkoff_public_invest_api_contract_v1_FuturesResponse__Output>
   GetAccruedInterests: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetAccruedInterestsRequest, _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsResponse, _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsRequest__Output, _tinkoff_public_invest_api_contract_v1_GetAccruedInterestsResponse__Output>
+  GetAssetBy: MethodDefinition<_tinkoff_public_invest_api_contract_v1_AssetRequest, _tinkoff_public_invest_api_contract_v1_AssetResponse, _tinkoff_public_invest_api_contract_v1_AssetRequest__Output, _tinkoff_public_invest_api_contract_v1_AssetResponse__Output>
+  GetAssets: MethodDefinition<_tinkoff_public_invest_api_contract_v1_AssetsRequest, _tinkoff_public_invest_api_contract_v1_AssetsResponse, _tinkoff_public_invest_api_contract_v1_AssetsRequest__Output, _tinkoff_public_invest_api_contract_v1_AssetsResponse__Output>
+  GetBondCoupons: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest, _tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse, _tinkoff_public_invest_api_contract_v1_GetBondCouponsRequest__Output, _tinkoff_public_invest_api_contract_v1_GetBondCouponsResponse__Output>
   GetDividends: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetDividendsRequest, _tinkoff_public_invest_api_contract_v1_GetDividendsResponse, _tinkoff_public_invest_api_contract_v1_GetDividendsRequest__Output, _tinkoff_public_invest_api_contract_v1_GetDividendsResponse__Output>
   GetFuturesMargin: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetFuturesMarginRequest, _tinkoff_public_invest_api_contract_v1_GetFuturesMarginResponse, _tinkoff_public_invest_api_contract_v1_GetFuturesMarginRequest__Output, _tinkoff_public_invest_api_contract_v1_GetFuturesMarginResponse__Output>
   GetInstrumentBy: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentRequest, _tinkoff_public_invest_api_contract_v1_InstrumentResponse, _tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_InstrumentResponse__Output>
