@@ -1,4 +1,6 @@
-import { OpenAPIClient } from '@tinkoff/invest-js';
+import 'dotenv/config';
+// import { OpenAPIClient } from '@tinkoff/invest-js';
+import { OpenAPIClient } from '../src/index';
 import { InstrumentIdType } from '../build/generated/tinkoff/public/invest/api/contract/v1/InstrumentIdType';
 
 const client = new OpenAPIClient({
@@ -37,6 +39,10 @@ client.instruments.getInstrumentByFIGI({ id: 'BBG000B9XRY4', classCode: '' }, (e
 });
 
 client.instruments.getInstrumentByTicker({ id: 'AAPL', classCode: 'SPBXM' }, (e, v) => {
+  console.log(e, v);
+});
+
+client.instruments.tradingSchedules({}, (e, v) => {
   console.log(e, v);
 });
 

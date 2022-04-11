@@ -4,17 +4,15 @@ SDK для работы с OpenAPI Тинькофф Инвестиции, кот
 
 `npm i @tinkoff/invest-js --save`
 
-
 ## Документация
 
 Доступна по [ссылке](https://tinkoff.github.io/investAPI/)
 
-
 ## Авторизация
 
-Более полную информацию можно просмотреть в [документации](https://tinkoffcreditsystems.github.io/invest-openapi/auth/)
+Более полную информацию можно просмотреть в [документации](https://tinkoff.github.io/invest-openapi/auth/)
 
-1. Перейдите в [настройки](https://www.tinkoff.ru/invest/settings/) блок "Токен для OpenAPI"
+1. Перейдите в [настройки](https://tinkoff.ru/invest/settings/) блок "Токен для OpenAPI"
 2. Функция "Подтверждение сделок кодом" должна быть отключена
 3. Выпустите токен OpenApi для биржи и Sandbox. Возможно система
    попросит вас авторизоваться еще раз, не беспокойтесь, это необходимо
@@ -34,7 +32,7 @@ SDK для работы с OpenAPI Тинькофф Инвестиции, кот
 
 Для использования _Sandbox_ необходимо передать в apiURL и в secretToken url
 эндпоинта с апи sandbox'а и токен для песочницы.
-Более подробно в [документации](https://tinkoffcreditsystems.github.io/invest-openapi/env/)
+Более подробно в [документации](https://tinkoff.github.io/invest-openapi/env/)
 
 ```typescript
 import { OpenAPIClient } from '@tinkoff/invest-js';
@@ -47,6 +45,9 @@ client.instruments.shares({}, (x, y) => {
   if (x) {
     console.log(x);
   }
-  console.log(x, y!.instruments.filter(x => x.ticker ==='AAPL'));
+  console.log(
+    x,
+    y!.instruments.filter((x) => x.ticker === 'AAPL')
+  );
 });
 ```
