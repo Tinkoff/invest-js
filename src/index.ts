@@ -11,6 +11,7 @@ import type {
 import { PROTO_PATH } from './constants';
 import { load } from './load';
 import { InstrumentsService } from './services/InstrumentsService';
+import { CacheConfig } from './models';
 
 export const { SandboxService } = load<SandboxType>(PROTO_PATH + 'sandbox.proto');
 export const { UsersService } = load<UsersType>(PROTO_PATH + 'users.proto');
@@ -24,6 +25,10 @@ export const { MarketDataService, MarketDataStreamService } = load<MarketdataTyp
 interface OpenAPIClientOptions {
   token: string;
   url?: string;
+  /**
+   * Конфигурация кэширования для InstrumentsService.
+   */
+  instrumentsCacheConfig?: CacheConfig;
 }
 
 class OpenAPIClient {
@@ -39,9 +44,9 @@ class OpenAPIClient {
   stopOrders: Client<typeof StopOrdersService>;
   sandbox: Client<typeof SandboxService>;
 
-  constructor(options: OpenAPIClientOptions) {
-    this.token = options.token;
-    this.url = options.url || 'invest-public-api.tinkoff.ru:443';
+  constructor({ token, url, instrumentsCacheConfig }: OpenAPIClientOptions) {
+    this.token = token;
+    this.url = url || 'invest-public-api.tinkoff.ru:443';
 
     const metadata = new Metadata();
     metadata.add('Authorization', 'Bearer ' + this.token);
@@ -51,7 +56,12 @@ class OpenAPIClient {
       credentials.createFromMetadataGenerator((_: any, callback: any) => callback(null, metadata))
     );
 
-    this.instruments = new InstrumentsService(this.url, ssl_creds);
+    this.instruments = new InstrumentsService(
+      this.url,
+      ssl_creds,
+      undefined,
+      instrumentsCacheConfig
+    );
     this.ordersStream = new OrdersStreamService(this.url, ssl_creds);
     this.marketDataStream = new MarketDataStreamService(this.url, ssl_creds);
     this.marketData = new MarketDataService(this.url, ssl_creds);
