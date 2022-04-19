@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/invest-js",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.3",
   "description": "Tinkoff Invest OpenAPI Client",
   "types": "./build/index.d.ts",
   "engines": {
@@ -29,27 +29,15 @@
   ],
   "license": "Apache-2.0",
   "devDependencies": {
-    "@grpc/grpc-js": "^1.5.0",
-    "@grpc/proto-loader": "^0.6.9",
-    "grpc-tools": "^1.11.2",
-    "@tinkoff/swagger-types-generator": "0.0.9",
-    "@types/isomorphic-fetch": "^0.0.35",
-    "@types/ws": "^7.2.5",
-    "fsevents": "^2.0.7",
-    "prettier": "^2.0.5",
-    "rollup": "^2.18.0",
-    "rollup-plugin-dts": "^1.4.7",
-    "rollup-plugin-typescript2": "^0.27.1",
-    "tslib": "^2.0.0",
-    "typedoc": "^0.22.12",
-    "typedoc-plugin-fixcomputednames": "^1.0.1",
-    "typedoc-plugin-markdown": "^2.3.1",
-    "typedoc-plugin-no-inherit": "^1.1.10",
-    "typescript": "^4.3.4",
     "ts-node": "^8.8.1"
   },
   "dependencies": {
-    "isomorphic-fetch": "^3.0.0",
-    "ws": "^7.3.0"
+    "@grpc/grpc-js": "^1.5.0",
+    "@grpc/proto-loader": "^0.6.9",
+    "grpc-tools": "^1.11.2",
+    "fsevents": "^2.0.7",
+    "prettier": "^2.0.5",
+    "tslib": "^2.0.0",
+    "typescript": "^4.3.4"
   }
 }
