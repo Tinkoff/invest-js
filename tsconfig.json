@@ -11,7 +11,8 @@
     "moduleResolution": "node",
     "noUnusedParameters": true,
     "esModuleInterop": true,
-    "outDir": "build"
+    "outDir": "build",
+    "experimentalDecorators": true
   },
   "exclude": [
     "example",
