@@ -24,6 +24,8 @@ export const { MarketDataService, MarketDataStreamService } = load<MarketdataTyp
 interface OpenAPIClientOptions {
   token: string;
   url?: string;
+
+  metadata?: Record<string, string>;
 }
 
 class OpenAPIClient {
@@ -43,8 +45,13 @@ class OpenAPIClient {
     this.token = options.token;
     this.url = options.url || 'invest-public-api.tinkoff.ru:443';
 
+    const providedMetadata = options.metadata || {}
+
     const metadata = new Metadata();
     metadata.add('Authorization', 'Bearer ' + this.token);
+    for (const providedMetadataKey in providedMetadata) {
+      metadata.add(providedMetadataKey, providedMetadata[providedMetadataKey])
+    }
 
     const ssl_creds = credentials.combineChannelCredentials(
       credentials.createSsl(),
