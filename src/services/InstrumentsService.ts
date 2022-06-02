@@ -6,12 +6,14 @@ import { InstrumentResponse } from '../generated/tinkoff/public/invest/api/contr
 import { InstrumentRequest } from '../generated/tinkoff/public/invest/api/contract/v1/InstrumentRequest';
 import { TradingSchedulesRequest } from '../generated/tinkoff/public/invest/api/contract/v1/TradingSchedulesRequest';
 import { TradingSchedulesResponse__Output } from '../generated/tinkoff/public/invest/api/contract/v1/TradingSchedulesResponse';
-import { Client, InstrumentsType } from '../types';
+import { InstrumentsType } from '../types';
 import { PROTO_PATH } from '../constants';
 import { load } from '../load';
+import { applyToAllMethods, modifyUnaryCallback } from '../helpers/decorators';
 
 const contract = load<InstrumentsType>(PROTO_PATH + 'instruments.proto');
 
+@applyToAllMethods(modifyUnaryCallback)
 export class InstrumentsService extends contract.InstrumentsService {
   /**
    * Метод получения списка акций для базовонго списка инструментов.
@@ -56,22 +58,21 @@ export class InstrumentsService extends contract.InstrumentsService {
   /**
    * Метод получения расписания торгов торговых площадок
    */
-  tradingSchedules: Client<typeof contract.InstrumentsService>['tradingSchedules'] = (
+  tradingSchedules(
     argument: TradingSchedulesRequest,
-    ...restArgs: Array<Metadata | CallOptions | requestCallback<TradingSchedulesResponse__Output>>
-  ): ClientUnaryCall => {
+    ...args: Array<Metadata | CallOptions | requestCallback<TradingSchedulesResponse__Output>>
+  ): ClientUnaryCall {
     const nowMs = Date.now();
     const nowSeconds = Math.floor(nowMs / 1000);
     const nanos = (nowMs % 1000) * 1e6;
+
     const defaultArgument: TradingSchedulesRequest = {
       from: { seconds: nowSeconds, nanos },
       to: { seconds: nowSeconds + 6 * 24 * 3600, nanos },
+      ...argument,
     };
 
-    return super.tradingSchedules(
-      Object.assign(defaultArgument, argument),
-      // @ts-ignore
-      ...restArgs
-    );
-  };
+    // @ts-ignore
+    return super.tradingSchedules(defaultArgument, ...args);
+  }
 }
