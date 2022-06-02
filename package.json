@@ -1,6 +1,6 @@
 {
   "name": "@tinkoff/invest-js",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.1-alpha.3",
   "description": "Tinkoff Invest OpenAPI Client",
   "types": "./build/index.d.ts",
   "engines": {

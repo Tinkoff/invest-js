@@ -7,6 +7,7 @@ export interface GetTradingStatusResponse {
   'tradingStatus'?: (_tinkoff_public_invest_api_contract_v1_SecurityTradingStatus | keyof typeof _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus);
   'limitOrderAvailableFlag'?: (boolean);
   'marketOrderAvailableFlag'?: (boolean);
+  'apiTradeAvailableFlag'?: (boolean);
 }
 
 export interface GetTradingStatusResponse__Output {
@@ -14,4 +15,5 @@ export interface GetTradingStatusResponse__Output {
   'tradingStatus': (keyof typeof _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus);
   'limitOrderAvailableFlag': (boolean);
   'marketOrderAvailableFlag': (boolean);
+  'apiTradeAvailableFlag': (boolean);
 }

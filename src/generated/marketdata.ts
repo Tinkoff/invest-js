@@ -42,6 +42,7 @@ export interface ProtoGrpcType {
               LastPriceSubscription: MessageTypeDefinition
               MarketDataRequest: MessageTypeDefinition
               MarketDataResponse: MessageTypeDefinition
+              MarketDataServerSideStreamRequest: MessageTypeDefinition
               MarketDataService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_MarketDataServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_MarketDataServiceDefinition }
               MarketDataStreamService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_MarketDataStreamServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_MarketDataStreamServiceDefinition }
               MoneyValue: MessageTypeDefinition

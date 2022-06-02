@@ -5,6 +5,7 @@ import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _goo
 import type { MoneyValue as _tinkoff_public_invest_api_contract_v1_MoneyValue, MoneyValue__Output as _tinkoff_public_invest_api_contract_v1_MoneyValue__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/MoneyValue';
 import type { SecurityTradingStatus as _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/SecurityTradingStatus';
 import type { ShareType as _tinkoff_public_invest_api_contract_v1_ShareType } from '../../../../../../tinkoff/public/invest/api/contract/v1/ShareType';
+import type { RealExchange as _tinkoff_public_invest_api_contract_v1_RealExchange } from '../../../../../../tinkoff/public/invest/api/contract/v1/RealExchange';
 import type { Long } from '@grpc/proto-loader';
 
 export interface Share {
@@ -39,6 +40,7 @@ export interface Share {
   'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
   'uid'?: (string);
+  'realExchange'?: (_tinkoff_public_invest_api_contract_v1_RealExchange | keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
 }
 
 export interface Share__Output {
@@ -73,4 +75,5 @@ export interface Share__Output {
   'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
   'uid': (string);
+  'realExchange': (keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
 }

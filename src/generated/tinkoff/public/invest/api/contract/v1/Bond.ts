@@ -4,6 +4,7 @@ import type { Quotation as _tinkoff_public_invest_api_contract_v1_Quotation, Quo
 import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 import type { MoneyValue as _tinkoff_public_invest_api_contract_v1_MoneyValue, MoneyValue__Output as _tinkoff_public_invest_api_contract_v1_MoneyValue__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/MoneyValue';
 import type { SecurityTradingStatus as _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/SecurityTradingStatus';
+import type { RealExchange as _tinkoff_public_invest_api_contract_v1_RealExchange } from '../../../../../../tinkoff/public/invest/api/contract/v1/RealExchange';
 import type { Long } from '@grpc/proto-loader';
 
 export interface Bond {
@@ -45,6 +46,7 @@ export interface Bond {
   'minPriceIncrement'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'apiTradeAvailableFlag'?: (boolean);
   'uid'?: (string);
+  'realExchange'?: (_tinkoff_public_invest_api_contract_v1_RealExchange | keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
 }
 
 export interface Bond__Output {
@@ -86,4 +88,5 @@ export interface Bond__Output {
   'minPriceIncrement': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'apiTradeAvailableFlag': (boolean);
   'uid': (string);
+  'realExchange': (keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
 }

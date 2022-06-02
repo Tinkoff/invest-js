@@ -39,15 +39,23 @@ export interface ProtoGrpcType {
               BondResponse: MessageTypeDefinition
               BondsResponse: MessageTypeDefinition
               Brand: MessageTypeDefinition
+              CountryResponse: MessageTypeDefinition
               Coupon: MessageTypeDefinition
               CouponType: EnumTypeDefinition
               CurrenciesResponse: MessageTypeDefinition
               Currency: MessageTypeDefinition
               CurrencyResponse: MessageTypeDefinition
               Dividend: MessageTypeDefinition
+              EditFavoritesActionType: EnumTypeDefinition
+              EditFavoritesRequest: MessageTypeDefinition
+              EditFavoritesRequestInstrument: MessageTypeDefinition
+              EditFavoritesResponse: MessageTypeDefinition
               Etf: MessageTypeDefinition
               EtfResponse: MessageTypeDefinition
               EtfsResponse: MessageTypeDefinition
+              FavoriteInstrument: MessageTypeDefinition
+              FindInstrumentRequest: MessageTypeDefinition
+              FindInstrumentResponse: MessageTypeDefinition
               Future: MessageTypeDefinition
               FutureResponse: MessageTypeDefinition
               FuturesResponse: MessageTypeDefinition
@@ -55,8 +63,15 @@ export interface ProtoGrpcType {
               GetAccruedInterestsResponse: MessageTypeDefinition
               GetBondCouponsRequest: MessageTypeDefinition
               GetBondCouponsResponse: MessageTypeDefinition
+              GetBrandRequest: MessageTypeDefinition
+              GetBrandsRequest: MessageTypeDefinition
+              GetBrandsResponse: MessageTypeDefinition
+              GetCountriesRequest: MessageTypeDefinition
+              GetCountriesResponse: MessageTypeDefinition
               GetDividendsRequest: MessageTypeDefinition
               GetDividendsResponse: MessageTypeDefinition
+              GetFavoritesRequest: MessageTypeDefinition
+              GetFavoritesResponse: MessageTypeDefinition
               GetFuturesMarginRequest: MessageTypeDefinition
               GetFuturesMarginResponse: MessageTypeDefinition
               Instrument: MessageTypeDefinition
@@ -64,12 +79,14 @@ export interface ProtoGrpcType {
               InstrumentLink: MessageTypeDefinition
               InstrumentRequest: MessageTypeDefinition
               InstrumentResponse: MessageTypeDefinition
+              InstrumentShort: MessageTypeDefinition
               InstrumentStatus: EnumTypeDefinition
               InstrumentsRequest: MessageTypeDefinition
               InstrumentsService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_InstrumentsServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_InstrumentsServiceDefinition }
               MoneyValue: MessageTypeDefinition
               Ping: MessageTypeDefinition
               Quotation: MessageTypeDefinition
+              RealExchange: EnumTypeDefinition
               SecurityTradingStatus: EnumTypeDefinition
               Share: MessageTypeDefinition
               ShareResponse: MessageTypeDefinition
