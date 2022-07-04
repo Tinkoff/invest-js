@@ -30,6 +30,7 @@ export interface ProtoGrpcType {
               GetLastPricesResponse: MessageTypeDefinition
               GetLastTradesRequest: MessageTypeDefinition
               GetLastTradesResponse: MessageTypeDefinition
+              GetMySubscriptions: MessageTypeDefinition
               GetOrderBookRequest: MessageTypeDefinition
               GetOrderBookResponse: MessageTypeDefinition
               GetTradingStatusRequest: MessageTypeDefinition

@@ -2,6 +2,7 @@ import type * as grpc from '@grpc/grpc-js';
 import type { EnumTypeDefinition, MessageTypeDefinition } from '@grpc/proto-loader';
 
 import type { OperationsServiceClient as _tinkoff_public_invest_api_contract_v1_OperationsServiceClient, OperationsServiceDefinition as _tinkoff_public_invest_api_contract_v1_OperationsServiceDefinition } from './tinkoff/public/invest/api/contract/v1/OperationsService';
+import type { OperationsStreamServiceClient as _tinkoff_public_invest_api_contract_v1_OperationsStreamServiceClient, OperationsStreamServiceDefinition as _tinkoff_public_invest_api_contract_v1_OperationsStreamServiceDefinition } from './tinkoff/public/invest/api/contract/v1/OperationsStreamService';
 import type { OrdersServiceClient as _tinkoff_public_invest_api_contract_v1_OrdersServiceClient, OrdersServiceDefinition as _tinkoff_public_invest_api_contract_v1_OrdersServiceDefinition } from './tinkoff/public/invest/api/contract/v1/OrdersService';
 import type { OrdersStreamServiceClient as _tinkoff_public_invest_api_contract_v1_OrdersStreamServiceClient, OrdersStreamServiceDefinition as _tinkoff_public_invest_api_contract_v1_OrdersStreamServiceDefinition } from './tinkoff/public/invest/api/contract/v1/OrdersStreamService';
 import type { SandboxServiceClient as _tinkoff_public_invest_api_contract_v1_SandboxServiceClient, SandboxServiceDefinition as _tinkoff_public_invest_api_contract_v1_SandboxServiceDefinition } from './tinkoff/public/invest/api/contract/v1/SandboxService';
@@ -26,6 +27,7 @@ export interface ProtoGrpcType {
               AccessLevel: EnumTypeDefinition
               Account: MessageTypeDefinition
               AccountStatus: EnumTypeDefinition
+              AccountSubscriptionStatus: MessageTypeDefinition
               AccountType: EnumTypeDefinition
               BrokerReport: MessageTypeDefinition
               BrokerReportRequest: MessageTypeDefinition
@@ -66,6 +68,7 @@ export interface ProtoGrpcType {
               OperationsRequest: MessageTypeDefinition
               OperationsResponse: MessageTypeDefinition
               OperationsService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_OperationsServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_OperationsServiceDefinition }
+              OperationsStreamService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_OperationsStreamServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_OperationsStreamServiceDefinition }
               OrderDirection: EnumTypeDefinition
               OrderExecutionReportStatus: EnumTypeDefinition
               OrderStage: MessageTypeDefinition
@@ -79,6 +82,10 @@ export interface ProtoGrpcType {
               PortfolioPosition: MessageTypeDefinition
               PortfolioRequest: MessageTypeDefinition
               PortfolioResponse: MessageTypeDefinition
+              PortfolioStreamRequest: MessageTypeDefinition
+              PortfolioStreamResponse: MessageTypeDefinition
+              PortfolioSubscriptionResult: MessageTypeDefinition
+              PortfolioSubscriptionStatus: EnumTypeDefinition
               PositionsFutures: MessageTypeDefinition
               PositionsRequest: MessageTypeDefinition
               PositionsResponse: MessageTypeDefinition

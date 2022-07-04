@@ -37,6 +37,7 @@ export interface Etf {
   'apiTradeAvailableFlag'?: (boolean);
   'uid'?: (string);
   'realExchange'?: (_tinkoff_public_invest_api_contract_v1_RealExchange | keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
+  'positionUid'?: (string);
 }
 
 export interface Etf__Output {
@@ -71,4 +72,5 @@ export interface Etf__Output {
   'apiTradeAvailableFlag': (boolean);
   'uid': (string);
   'realExchange': (keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
+  'positionUid': (string);
 }

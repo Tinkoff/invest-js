@@ -9,6 +9,8 @@ export interface InstrumentShort {
   'instrumentType'?: (string);
   'name'?: (string);
   'uid'?: (string);
+  'positionUid'?: (string);
+  'apiTradeAvailableFlag'?: (boolean);
 }
 
 export interface InstrumentShort__Output {
@@ -19,4 +21,6 @@ export interface InstrumentShort__Output {
   'instrumentType': (string);
   'name': (string);
   'uid': (string);
+  'positionUid': (string);
+  'apiTradeAvailableFlag': (boolean);
 }
