@@ -5,6 +5,7 @@ import type { SubscribeOrderBookRequest as _tinkoff_public_invest_api_contract_v
 import type { SubscribeTradesRequest as _tinkoff_public_invest_api_contract_v1_SubscribeTradesRequest, SubscribeTradesRequest__Output as _tinkoff_public_invest_api_contract_v1_SubscribeTradesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/SubscribeTradesRequest';
 import type { SubscribeInfoRequest as _tinkoff_public_invest_api_contract_v1_SubscribeInfoRequest, SubscribeInfoRequest__Output as _tinkoff_public_invest_api_contract_v1_SubscribeInfoRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/SubscribeInfoRequest';
 import type { SubscribeLastPriceRequest as _tinkoff_public_invest_api_contract_v1_SubscribeLastPriceRequest, SubscribeLastPriceRequest__Output as _tinkoff_public_invest_api_contract_v1_SubscribeLastPriceRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/SubscribeLastPriceRequest';
+import type { GetMySubscriptions as _tinkoff_public_invest_api_contract_v1_GetMySubscriptions, GetMySubscriptions__Output as _tinkoff_public_invest_api_contract_v1_GetMySubscriptions__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetMySubscriptions';
 
 export interface MarketDataRequest {
   'subscribeCandlesRequest'?: (_tinkoff_public_invest_api_contract_v1_SubscribeCandlesRequest | null);
@@ -12,7 +13,8 @@ export interface MarketDataRequest {
   'subscribeTradesRequest'?: (_tinkoff_public_invest_api_contract_v1_SubscribeTradesRequest | null);
   'subscribeInfoRequest'?: (_tinkoff_public_invest_api_contract_v1_SubscribeInfoRequest | null);
   'subscribeLastPriceRequest'?: (_tinkoff_public_invest_api_contract_v1_SubscribeLastPriceRequest | null);
-  'payload'?: "subscribeCandlesRequest"|"subscribeOrderBookRequest"|"subscribeTradesRequest"|"subscribeInfoRequest"|"subscribeLastPriceRequest";
+  'getMySubscriptions'?: (_tinkoff_public_invest_api_contract_v1_GetMySubscriptions | null);
+  'payload'?: "subscribeCandlesRequest"|"subscribeOrderBookRequest"|"subscribeTradesRequest"|"subscribeInfoRequest"|"subscribeLastPriceRequest"|"getMySubscriptions";
 }
 
 export interface MarketDataRequest__Output {
@@ -21,5 +23,6 @@ export interface MarketDataRequest__Output {
   'subscribeTradesRequest'?: (_tinkoff_public_invest_api_contract_v1_SubscribeTradesRequest__Output | null);
   'subscribeInfoRequest'?: (_tinkoff_public_invest_api_contract_v1_SubscribeInfoRequest__Output | null);
   'subscribeLastPriceRequest'?: (_tinkoff_public_invest_api_contract_v1_SubscribeLastPriceRequest__Output | null);
-  'payload': "subscribeCandlesRequest"|"subscribeOrderBookRequest"|"subscribeTradesRequest"|"subscribeInfoRequest"|"subscribeLastPriceRequest";
+  'getMySubscriptions'?: (_tinkoff_public_invest_api_contract_v1_GetMySubscriptions__Output | null);
+  'payload': "subscribeCandlesRequest"|"subscribeOrderBookRequest"|"subscribeTradesRequest"|"subscribeInfoRequest"|"subscribeLastPriceRequest"|"getMySubscriptions";
 }

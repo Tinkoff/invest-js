@@ -6,10 +6,14 @@ export interface PositionsSecurities {
   'figi'?: (string);
   'blocked'?: (number | string | Long);
   'balance'?: (number | string | Long);
+  'exchangeBlocked'?: (boolean);
+  'instrumentType'?: (string);
 }
 
 export interface PositionsSecurities__Output {
   'figi': (string);
   'blocked': (string);
   'balance': (string);
+  'exchangeBlocked': (boolean);
+  'instrumentType': (string);
 }
