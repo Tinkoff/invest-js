@@ -2,13 +2,16 @@ import { Metadata, CallOptions, ClientUnaryCall, requestCallback } from '@grpc/g
 import { InstrumentStatus } from '../generated/tinkoff/public/invest/api/contract/v1/InstrumentStatus';
 import { SharesResponse } from '../generated/tinkoff/public/invest/api/contract/v1/SharesResponse';
 import { InstrumentIdType } from '../generated/tinkoff/public/invest/api/contract/v1/InstrumentIdType';
-import { InstrumentResponse } from '../generated/tinkoff/public/invest/api/contract/v1/InstrumentResponse';
 import { InstrumentRequest } from '../generated/tinkoff/public/invest/api/contract/v1/InstrumentRequest';
 import { TradingSchedulesRequest } from '../generated/tinkoff/public/invest/api/contract/v1/TradingSchedulesRequest';
 import { TradingSchedulesResponse__Output } from '../generated/tinkoff/public/invest/api/contract/v1/TradingSchedulesResponse';
 import { Client, InstrumentsType } from '../types';
 import { PROTO_PATH } from '../constants';
 import { load } from '../load';
+import {
+  InstrumentResponse__Output
+} from "../generated/tinkoff/public/invest/api/contract/v1/InstrumentResponse";
+import {LIMIT_ORDER_STATUSES, MARKET_ORDER_STATUSES} from "./constants";
 
 const contract = load<InstrumentsType>(PROTO_PATH + 'instruments.proto');
 
@@ -32,7 +35,7 @@ export class InstrumentsService extends contract.InstrumentsService {
    */
   getInstrumentByFIGI(
     argument: InstrumentRequest,
-    callback: requestCallback<InstrumentResponse>
+    callback: requestCallback<InstrumentResponse__Output>
   ): ClientUnaryCall {
     return this.getInstrumentBy(
       { idType: InstrumentIdType.INSTRUMENT_ID_TYPE_FIGI, ...argument },
@@ -45,7 +48,7 @@ export class InstrumentsService extends contract.InstrumentsService {
    */
   getInstrumentByTicker(
     argument: InstrumentRequest,
-    callback: requestCallback<InstrumentResponse>
+    callback: requestCallback<InstrumentResponse__Output>
   ): ClientUnaryCall {
     return this.getInstrumentBy(
       { idType: InstrumentIdType.INSTRUMENT_ID_TYPE_TICKER, ...argument },
@@ -74,4 +77,25 @@ export class InstrumentsService extends contract.InstrumentsService {
       ...restArgs
     );
   };
+
+  canMarketOrder(figi: string, callback: requestCallback<boolean>) {
+    this.checkStatusExistInCanStatuses(figi, callback, MARKET_ORDER_STATUSES)
+  }
+
+  canLimitOrder(figi: string, callback: requestCallback<boolean>) {
+    this.checkStatusExistInCanStatuses(figi, callback, LIMIT_ORDER_STATUSES)
+  }
+
+  private checkStatusExistInCanStatuses(figi: string, callback: requestCallback<boolean>, statuses: string[]) {
+    this.getInstrumentByFIGI({id: figi}, (err: any, value?: InstrumentResponse__Output) => {
+      if (err) {
+        callback(err)
+      }
+
+      const exist = value?.instrument?.tradingStatus ?
+        statuses.includes(value.instrument.tradingStatus)
+        : false
+      callback(null, exist)
+    })
+  }
 }
