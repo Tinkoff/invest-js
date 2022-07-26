@@ -3,6 +3,7 @@
 import type { Quotation as _tinkoff_public_invest_api_contract_v1_Quotation, Quotation__Output as _tinkoff_public_invest_api_contract_v1_Quotation__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/Quotation';
 import type { SecurityTradingStatus as _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/SecurityTradingStatus';
 import type { RealExchange as _tinkoff_public_invest_api_contract_v1_RealExchange } from '../../../../../../tinkoff/public/invest/api/contract/v1/RealExchange';
+import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 
 export interface Instrument {
   'figi'?: (string);
@@ -32,6 +33,9 @@ export interface Instrument {
   'uid'?: (string);
   'realExchange'?: (_tinkoff_public_invest_api_contract_v1_RealExchange | keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
   'positionUid'?: (string);
+  'forIisFlag'?: (boolean);
+  'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
+  'first_1dayCandleDate'?: (_google_protobuf_Timestamp | null);
 }
 
 export interface Instrument__Output {
@@ -62,4 +66,7 @@ export interface Instrument__Output {
   'uid': (string);
   'realExchange': (keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
   'positionUid': (string);
+  'forIisFlag': (boolean);
+  'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);
+  'first_1dayCandleDate': (_google_protobuf_Timestamp__Output | null);
 }

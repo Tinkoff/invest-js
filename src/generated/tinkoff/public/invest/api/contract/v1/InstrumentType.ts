@@ -1,0 +1,12 @@
+// Original file: investAPI/src/docs/contracts/operations.proto
+
+export enum InstrumentType {
+  INSTRUMENT_TYPE_UNSPECIFIED = 0,
+  INSTRUMENT_TYPE_BOND = 1,
+  INSTRUMENT_TYPE_SHARE = 2,
+  INSTRUMENT_TYPE_CURRENCY = 3,
+  INSTRUMENT_TYPE_ETF = 4,
+  INSTRUMENT_TYPE_FUTURES = 5,
+  INSTRUMENT_TYPE_SP = 6,
+  INSTRUMENT_TYPE_OPTION = 7,
+}

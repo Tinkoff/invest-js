@@ -1,5 +1,6 @@
 // Original file: investAPI/src/docs/contracts/instruments.proto
 
+import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 
 export interface InstrumentShort {
   'isin'?: (string);
@@ -11,6 +12,9 @@ export interface InstrumentShort {
   'uid'?: (string);
   'positionUid'?: (string);
   'apiTradeAvailableFlag'?: (boolean);
+  'forIisFlag'?: (boolean);
+  'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
+  'first_1dayCandleDate'?: (_google_protobuf_Timestamp | null);
 }
 
 export interface InstrumentShort__Output {
@@ -23,4 +27,7 @@ export interface InstrumentShort__Output {
   'uid': (string);
   'positionUid': (string);
   'apiTradeAvailableFlag': (boolean);
+  'forIisFlag': (boolean);
+  'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);
+  'first_1dayCandleDate': (_google_protobuf_Timestamp__Output | null);
 }
