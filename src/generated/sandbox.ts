@@ -53,15 +53,21 @@ export interface ProtoGrpcType {
               GetInfoResponse: MessageTypeDefinition
               GetMarginAttributesRequest: MessageTypeDefinition
               GetMarginAttributesResponse: MessageTypeDefinition
+              GetOperationsByCursorRequest: MessageTypeDefinition
+              GetOperationsByCursorResponse: MessageTypeDefinition
               GetOrderStateRequest: MessageTypeDefinition
               GetOrdersRequest: MessageTypeDefinition
               GetOrdersResponse: MessageTypeDefinition
               GetUserTariffRequest: MessageTypeDefinition
               GetUserTariffResponse: MessageTypeDefinition
+              InstrumentType: EnumTypeDefinition
               MoneyValue: MessageTypeDefinition
               OpenSandboxAccountRequest: MessageTypeDefinition
               OpenSandboxAccountResponse: MessageTypeDefinition
               Operation: MessageTypeDefinition
+              OperationItem: MessageTypeDefinition
+              OperationItemTrade: MessageTypeDefinition
+              OperationItemTrades: MessageTypeDefinition
               OperationState: EnumTypeDefinition
               OperationTrade: MessageTypeDefinition
               OperationType: EnumTypeDefinition
@@ -92,7 +98,9 @@ export interface ProtoGrpcType {
               PositionsSecurities: MessageTypeDefinition
               PostOrderRequest: MessageTypeDefinition
               PostOrderResponse: MessageTypeDefinition
+              PriceType: EnumTypeDefinition
               Quotation: MessageTypeDefinition
+              ReplaceOrderRequest: MessageTypeDefinition
               SandboxPayInRequest: MessageTypeDefinition
               SandboxPayInResponse: MessageTypeDefinition
               SandboxService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_SandboxServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_SandboxServiceDefinition }

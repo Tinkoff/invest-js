@@ -35,8 +35,14 @@ export interface ProtoGrpcType {
               GetDividendsForeignIssuerReportResponse: MessageTypeDefinition
               GetDividendsForeignIssuerRequest: MessageTypeDefinition
               GetDividendsForeignIssuerResponse: MessageTypeDefinition
+              GetOperationsByCursorRequest: MessageTypeDefinition
+              GetOperationsByCursorResponse: MessageTypeDefinition
+              InstrumentType: EnumTypeDefinition
               MoneyValue: MessageTypeDefinition
               Operation: MessageTypeDefinition
+              OperationItem: MessageTypeDefinition
+              OperationItemTrade: MessageTypeDefinition
+              OperationItemTrades: MessageTypeDefinition
               OperationState: EnumTypeDefinition
               OperationTrade: MessageTypeDefinition
               OperationType: EnumTypeDefinition

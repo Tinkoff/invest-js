@@ -38,7 +38,9 @@ export interface ProtoGrpcType {
               Ping: MessageTypeDefinition
               PostOrderRequest: MessageTypeDefinition
               PostOrderResponse: MessageTypeDefinition
+              PriceType: EnumTypeDefinition
               Quotation: MessageTypeDefinition
+              ReplaceOrderRequest: MessageTypeDefinition
               SecurityTradingStatus: EnumTypeDefinition
               TradesStreamRequest: MessageTypeDefinition
               TradesStreamResponse: MessageTypeDefinition
