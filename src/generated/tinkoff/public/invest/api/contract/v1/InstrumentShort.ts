@@ -15,6 +15,7 @@ export interface InstrumentShort {
   'forIisFlag'?: (boolean);
   'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
   'first_1dayCandleDate'?: (_google_protobuf_Timestamp | null);
+  'forQualInvestorFlag'?: (boolean);
 }
 
 export interface InstrumentShort__Output {
@@ -30,4 +31,5 @@ export interface InstrumentShort__Output {
   'forIisFlag': (boolean);
   'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);
   'first_1dayCandleDate': (_google_protobuf_Timestamp__Output | null);
+  'forQualInvestorFlag': (boolean);
 }

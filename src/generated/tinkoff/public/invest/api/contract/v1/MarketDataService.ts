@@ -4,6 +4,8 @@ import type * as grpc from '@grpc/grpc-js'
 import type { MethodDefinition } from '@grpc/proto-loader'
 import type { GetCandlesRequest as _tinkoff_public_invest_api_contract_v1_GetCandlesRequest, GetCandlesRequest__Output as _tinkoff_public_invest_api_contract_v1_GetCandlesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetCandlesRequest';
 import type { GetCandlesResponse as _tinkoff_public_invest_api_contract_v1_GetCandlesResponse, GetCandlesResponse__Output as _tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetCandlesResponse';
+import type { GetClosePricesRequest as _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, GetClosePricesRequest__Output as _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetClosePricesRequest';
+import type { GetClosePricesResponse as _tinkoff_public_invest_api_contract_v1_GetClosePricesResponse, GetClosePricesResponse__Output as _tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetClosePricesResponse';
 import type { GetLastPricesRequest as _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, GetLastPricesRequest__Output as _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetLastPricesRequest';
 import type { GetLastPricesResponse as _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse, GetLastPricesResponse__Output as _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetLastPricesResponse';
 import type { GetLastTradesRequest as _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, GetLastTradesRequest__Output as _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetLastTradesRequest';
@@ -22,6 +24,15 @@ export interface MarketDataServiceClient extends grpc.Client {
   getCandles(argument: _tinkoff_public_invest_api_contract_v1_GetCandlesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output>): grpc.ClientUnaryCall;
   getCandles(argument: _tinkoff_public_invest_api_contract_v1_GetCandlesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output>): grpc.ClientUnaryCall;
   getCandles(argument: _tinkoff_public_invest_api_contract_v1_GetCandlesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output>): grpc.ClientUnaryCall;
+  
+  GetClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
+  GetClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
+  GetClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
+  GetClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
+  getClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
+  getClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
+  getClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
+  getClosePrices(argument: _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>): grpc.ClientUnaryCall;
   
   GetLastPrices(argument: _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output>): grpc.ClientUnaryCall;
   GetLastPrices(argument: _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output>): grpc.ClientUnaryCall;
@@ -64,6 +75,8 @@ export interface MarketDataServiceClient extends grpc.Client {
 export interface MarketDataServiceHandlers extends grpc.UntypedServiceImplementation {
   GetCandles: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetCandlesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetCandlesResponse>;
   
+  GetClosePrices: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetClosePricesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetClosePricesResponse>;
+  
   GetLastPrices: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetLastPricesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse>;
   
   GetLastTrades: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetLastTradesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse>;
@@ -76,6 +89,7 @@ export interface MarketDataServiceHandlers extends grpc.UntypedServiceImplementa
 
 export interface MarketDataServiceDefinition extends grpc.ServiceDefinition {
   GetCandles: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetCandlesRequest, _tinkoff_public_invest_api_contract_v1_GetCandlesResponse, _tinkoff_public_invest_api_contract_v1_GetCandlesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output>
+  GetClosePrices: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetClosePricesRequest, _tinkoff_public_invest_api_contract_v1_GetClosePricesResponse, _tinkoff_public_invest_api_contract_v1_GetClosePricesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetClosePricesResponse__Output>
   GetLastPrices: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetLastPricesRequest, _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse, _tinkoff_public_invest_api_contract_v1_GetLastPricesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastPricesResponse__Output>
   GetLastTrades: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse, _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>
   GetOrderBook: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetOrderBookRequest, _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse, _tinkoff_public_invest_api_contract_v1_GetOrderBookRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse__Output>

@@ -15,6 +15,7 @@ export interface Candle {
   'volume'?: (number | string | Long);
   'time'?: (_google_protobuf_Timestamp | null);
   'lastTradeTs'?: (_google_protobuf_Timestamp | null);
+  'instrumentUid'?: (string);
 }
 
 export interface Candle__Output {
@@ -27,4 +28,5 @@ export interface Candle__Output {
   'volume': (string);
   'time': (_google_protobuf_Timestamp__Output | null);
   'lastTradeTs': (_google_protobuf_Timestamp__Output | null);
+  'instrumentUid': (string);
 }

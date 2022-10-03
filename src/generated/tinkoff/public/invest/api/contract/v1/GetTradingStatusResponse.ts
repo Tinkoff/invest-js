@@ -8,6 +8,7 @@ export interface GetTradingStatusResponse {
   'limitOrderAvailableFlag'?: (boolean);
   'marketOrderAvailableFlag'?: (boolean);
   'apiTradeAvailableFlag'?: (boolean);
+  'instrumentUid'?: (string);
 }
 
 export interface GetTradingStatusResponse__Output {
@@ -16,4 +17,5 @@ export interface GetTradingStatusResponse__Output {
   'limitOrderAvailableFlag': (boolean);
   'marketOrderAvailableFlag': (boolean);
   'apiTradeAvailableFlag': (boolean);
+  'instrumentUid': (string);
 }

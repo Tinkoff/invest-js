@@ -13,6 +13,7 @@ export interface OrderBook {
   'time'?: (_google_protobuf_Timestamp | null);
   'limitUp'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'limitDown'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
+  'instrumentUid'?: (string);
 }
 
 export interface OrderBook__Output {
@@ -24,4 +25,5 @@ export interface OrderBook__Output {
   'time': (_google_protobuf_Timestamp__Output | null);
   'limitUp': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'limitDown': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
+  'instrumentUid': (string);
 }

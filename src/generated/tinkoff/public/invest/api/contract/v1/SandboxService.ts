@@ -8,6 +8,8 @@ import type { CloseSandboxAccountRequest as _tinkoff_public_invest_api_contract_
 import type { CloseSandboxAccountResponse as _tinkoff_public_invest_api_contract_v1_CloseSandboxAccountResponse, CloseSandboxAccountResponse__Output as _tinkoff_public_invest_api_contract_v1_CloseSandboxAccountResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/CloseSandboxAccountResponse';
 import type { GetAccountsRequest as _tinkoff_public_invest_api_contract_v1_GetAccountsRequest, GetAccountsRequest__Output as _tinkoff_public_invest_api_contract_v1_GetAccountsRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetAccountsRequest';
 import type { GetAccountsResponse as _tinkoff_public_invest_api_contract_v1_GetAccountsResponse, GetAccountsResponse__Output as _tinkoff_public_invest_api_contract_v1_GetAccountsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetAccountsResponse';
+import type { GetOperationsByCursorRequest as _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, GetOperationsByCursorRequest__Output as _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOperationsByCursorRequest';
+import type { GetOperationsByCursorResponse as _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse, GetOperationsByCursorResponse__Output as _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOperationsByCursorResponse';
 import type { GetOrderStateRequest as _tinkoff_public_invest_api_contract_v1_GetOrderStateRequest, GetOrderStateRequest__Output as _tinkoff_public_invest_api_contract_v1_GetOrderStateRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOrderStateRequest';
 import type { GetOrdersRequest as _tinkoff_public_invest_api_contract_v1_GetOrdersRequest, GetOrdersRequest__Output as _tinkoff_public_invest_api_contract_v1_GetOrdersRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOrdersRequest';
 import type { GetOrdersResponse as _tinkoff_public_invest_api_contract_v1_GetOrdersResponse, GetOrdersResponse__Output as _tinkoff_public_invest_api_contract_v1_GetOrdersResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOrdersResponse';
@@ -22,8 +24,11 @@ import type { PositionsRequest as _tinkoff_public_invest_api_contract_v1_Positio
 import type { PositionsResponse as _tinkoff_public_invest_api_contract_v1_PositionsResponse, PositionsResponse__Output as _tinkoff_public_invest_api_contract_v1_PositionsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/PositionsResponse';
 import type { PostOrderRequest as _tinkoff_public_invest_api_contract_v1_PostOrderRequest, PostOrderRequest__Output as _tinkoff_public_invest_api_contract_v1_PostOrderRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/PostOrderRequest';
 import type { PostOrderResponse as _tinkoff_public_invest_api_contract_v1_PostOrderResponse, PostOrderResponse__Output as _tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/PostOrderResponse';
+import type { ReplaceOrderRequest as _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, ReplaceOrderRequest__Output as _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/ReplaceOrderRequest';
 import type { SandboxPayInRequest as _tinkoff_public_invest_api_contract_v1_SandboxPayInRequest, SandboxPayInRequest__Output as _tinkoff_public_invest_api_contract_v1_SandboxPayInRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/SandboxPayInRequest';
 import type { SandboxPayInResponse as _tinkoff_public_invest_api_contract_v1_SandboxPayInResponse, SandboxPayInResponse__Output as _tinkoff_public_invest_api_contract_v1_SandboxPayInResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/SandboxPayInResponse';
+import type { WithdrawLimitsRequest as _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, WithdrawLimitsRequest__Output as _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/WithdrawLimitsRequest';
+import type { WithdrawLimitsResponse as _tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse, WithdrawLimitsResponse__Output as _tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/WithdrawLimitsResponse';
 
 export interface SandboxServiceClient extends grpc.Client {
   CancelSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_CancelOrderRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_CancelOrderResponse__Output>): grpc.ClientUnaryCall;
@@ -62,6 +67,15 @@ export interface SandboxServiceClient extends grpc.Client {
   getSandboxOperations(argument: _tinkoff_public_invest_api_contract_v1_OperationsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OperationsResponse__Output>): grpc.ClientUnaryCall;
   getSandboxOperations(argument: _tinkoff_public_invest_api_contract_v1_OperationsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OperationsResponse__Output>): grpc.ClientUnaryCall;
   
+  GetSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  GetSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  GetSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  GetSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxOperationsByCursor(argument: _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>): grpc.ClientUnaryCall;
+  
   GetSandboxOrderState(argument: _tinkoff_public_invest_api_contract_v1_GetOrderStateRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OrderState__Output>): grpc.ClientUnaryCall;
   GetSandboxOrderState(argument: _tinkoff_public_invest_api_contract_v1_GetOrderStateRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OrderState__Output>): grpc.ClientUnaryCall;
   GetSandboxOrderState(argument: _tinkoff_public_invest_api_contract_v1_GetOrderStateRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OrderState__Output>): grpc.ClientUnaryCall;
@@ -98,6 +112,15 @@ export interface SandboxServiceClient extends grpc.Client {
   getSandboxPositions(argument: _tinkoff_public_invest_api_contract_v1_PositionsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PositionsResponse__Output>): grpc.ClientUnaryCall;
   getSandboxPositions(argument: _tinkoff_public_invest_api_contract_v1_PositionsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PositionsResponse__Output>): grpc.ClientUnaryCall;
   
+  GetSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  GetSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  GetSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  GetSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  getSandboxWithdrawLimits(argument: _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>): grpc.ClientUnaryCall;
+  
   OpenSandboxAccount(argument: _tinkoff_public_invest_api_contract_v1_OpenSandboxAccountRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OpenSandboxAccountResponse__Output>): grpc.ClientUnaryCall;
   OpenSandboxAccount(argument: _tinkoff_public_invest_api_contract_v1_OpenSandboxAccountRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OpenSandboxAccountResponse__Output>): grpc.ClientUnaryCall;
   OpenSandboxAccount(argument: _tinkoff_public_invest_api_contract_v1_OpenSandboxAccountRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OpenSandboxAccountResponse__Output>): grpc.ClientUnaryCall;
@@ -115,6 +138,15 @@ export interface SandboxServiceClient extends grpc.Client {
   postSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_PostOrderRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
   postSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_PostOrderRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
   postSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_PostOrderRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  
+  ReplaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  ReplaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  ReplaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  ReplaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  replaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  replaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  replaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
+  replaceSandboxOrder(argument: _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>): grpc.ClientUnaryCall;
   
   SandboxPayIn(argument: _tinkoff_public_invest_api_contract_v1_SandboxPayInRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_SandboxPayInResponse__Output>): grpc.ClientUnaryCall;
   SandboxPayIn(argument: _tinkoff_public_invest_api_contract_v1_SandboxPayInRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_SandboxPayInResponse__Output>): grpc.ClientUnaryCall;
@@ -136,6 +168,8 @@ export interface SandboxServiceHandlers extends grpc.UntypedServiceImplementatio
   
   GetSandboxOperations: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_OperationsRequest__Output, _tinkoff_public_invest_api_contract_v1_OperationsResponse>;
   
+  GetSandboxOperationsByCursor: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse>;
+  
   GetSandboxOrderState: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetOrderStateRequest__Output, _tinkoff_public_invest_api_contract_v1_OrderState>;
   
   GetSandboxOrders: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetOrdersRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOrdersResponse>;
@@ -144,9 +178,13 @@ export interface SandboxServiceHandlers extends grpc.UntypedServiceImplementatio
   
   GetSandboxPositions: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_PositionsRequest__Output, _tinkoff_public_invest_api_contract_v1_PositionsResponse>;
   
+  GetSandboxWithdrawLimits: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest__Output, _tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse>;
+  
   OpenSandboxAccount: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_OpenSandboxAccountRequest__Output, _tinkoff_public_invest_api_contract_v1_OpenSandboxAccountResponse>;
   
   PostSandboxOrder: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_PostOrderRequest__Output, _tinkoff_public_invest_api_contract_v1_PostOrderResponse>;
+  
+  ReplaceSandboxOrder: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest__Output, _tinkoff_public_invest_api_contract_v1_PostOrderResponse>;
   
   SandboxPayIn: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_SandboxPayInRequest__Output, _tinkoff_public_invest_api_contract_v1_SandboxPayInResponse>;
   
@@ -157,11 +195,14 @@ export interface SandboxServiceDefinition extends grpc.ServiceDefinition {
   CloseSandboxAccount: MethodDefinition<_tinkoff_public_invest_api_contract_v1_CloseSandboxAccountRequest, _tinkoff_public_invest_api_contract_v1_CloseSandboxAccountResponse, _tinkoff_public_invest_api_contract_v1_CloseSandboxAccountRequest__Output, _tinkoff_public_invest_api_contract_v1_CloseSandboxAccountResponse__Output>
   GetSandboxAccounts: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetAccountsRequest, _tinkoff_public_invest_api_contract_v1_GetAccountsResponse, _tinkoff_public_invest_api_contract_v1_GetAccountsRequest__Output, _tinkoff_public_invest_api_contract_v1_GetAccountsResponse__Output>
   GetSandboxOperations: MethodDefinition<_tinkoff_public_invest_api_contract_v1_OperationsRequest, _tinkoff_public_invest_api_contract_v1_OperationsResponse, _tinkoff_public_invest_api_contract_v1_OperationsRequest__Output, _tinkoff_public_invest_api_contract_v1_OperationsResponse__Output>
+  GetSandboxOperationsByCursor: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest, _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse, _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOperationsByCursorResponse__Output>
   GetSandboxOrderState: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetOrderStateRequest, _tinkoff_public_invest_api_contract_v1_OrderState, _tinkoff_public_invest_api_contract_v1_GetOrderStateRequest__Output, _tinkoff_public_invest_api_contract_v1_OrderState__Output>
   GetSandboxOrders: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetOrdersRequest, _tinkoff_public_invest_api_contract_v1_GetOrdersResponse, _tinkoff_public_invest_api_contract_v1_GetOrdersRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOrdersResponse__Output>
   GetSandboxPortfolio: MethodDefinition<_tinkoff_public_invest_api_contract_v1_PortfolioRequest, _tinkoff_public_invest_api_contract_v1_PortfolioResponse, _tinkoff_public_invest_api_contract_v1_PortfolioRequest__Output, _tinkoff_public_invest_api_contract_v1_PortfolioResponse__Output>
   GetSandboxPositions: MethodDefinition<_tinkoff_public_invest_api_contract_v1_PositionsRequest, _tinkoff_public_invest_api_contract_v1_PositionsResponse, _tinkoff_public_invest_api_contract_v1_PositionsRequest__Output, _tinkoff_public_invest_api_contract_v1_PositionsResponse__Output>
+  GetSandboxWithdrawLimits: MethodDefinition<_tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest, _tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse, _tinkoff_public_invest_api_contract_v1_WithdrawLimitsRequest__Output, _tinkoff_public_invest_api_contract_v1_WithdrawLimitsResponse__Output>
   OpenSandboxAccount: MethodDefinition<_tinkoff_public_invest_api_contract_v1_OpenSandboxAccountRequest, _tinkoff_public_invest_api_contract_v1_OpenSandboxAccountResponse, _tinkoff_public_invest_api_contract_v1_OpenSandboxAccountRequest__Output, _tinkoff_public_invest_api_contract_v1_OpenSandboxAccountResponse__Output>
   PostSandboxOrder: MethodDefinition<_tinkoff_public_invest_api_contract_v1_PostOrderRequest, _tinkoff_public_invest_api_contract_v1_PostOrderResponse, _tinkoff_public_invest_api_contract_v1_PostOrderRequest__Output, _tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>
+  ReplaceSandboxOrder: MethodDefinition<_tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest, _tinkoff_public_invest_api_contract_v1_PostOrderResponse, _tinkoff_public_invest_api_contract_v1_ReplaceOrderRequest__Output, _tinkoff_public_invest_api_contract_v1_PostOrderResponse__Output>
   SandboxPayIn: MethodDefinition<_tinkoff_public_invest_api_contract_v1_SandboxPayInRequest, _tinkoff_public_invest_api_contract_v1_SandboxPayInResponse, _tinkoff_public_invest_api_contract_v1_SandboxPayInRequest__Output, _tinkoff_public_invest_api_contract_v1_SandboxPayInResponse__Output>
 }

@@ -12,6 +12,7 @@ export interface PortfolioResponse {
   'totalAmountFutures'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
   'expectedYield'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'positions'?: (_tinkoff_public_invest_api_contract_v1_PortfolioPosition)[];
+  'accountId'?: (string);
 }
 
 export interface PortfolioResponse__Output {
@@ -22,4 +23,5 @@ export interface PortfolioResponse__Output {
   'totalAmountFutures': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
   'expectedYield': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'positions': (_tinkoff_public_invest_api_contract_v1_PortfolioPosition__Output)[];
+  'accountId': (string);
 }
