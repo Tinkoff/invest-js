@@ -92,10 +92,18 @@ export interface ProtoGrpcType {
               PortfolioStreamResponse: MessageTypeDefinition
               PortfolioSubscriptionResult: MessageTypeDefinition
               PortfolioSubscriptionStatus: EnumTypeDefinition
+              PositionData: MessageTypeDefinition
+              PositionsAccountSubscriptionStatus: EnumTypeDefinition
               PositionsFutures: MessageTypeDefinition
+              PositionsMoney: MessageTypeDefinition
+              PositionsOptions: MessageTypeDefinition
               PositionsRequest: MessageTypeDefinition
               PositionsResponse: MessageTypeDefinition
               PositionsSecurities: MessageTypeDefinition
+              PositionsStreamRequest: MessageTypeDefinition
+              PositionsStreamResponse: MessageTypeDefinition
+              PositionsSubscriptionResult: MessageTypeDefinition
+              PositionsSubscriptionStatus: MessageTypeDefinition
               PostOrderRequest: MessageTypeDefinition
               PostOrderResponse: MessageTypeDefinition
               PriceType: EnumTypeDefinition
@@ -110,6 +118,7 @@ export interface ProtoGrpcType {
               TradesStreamResponse: MessageTypeDefinition
               UnaryLimit: MessageTypeDefinition
               UsersService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_UsersServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_UsersServiceDefinition }
+              VirtualPortfolioPosition: MessageTypeDefinition
               WithdrawLimitsRequest: MessageTypeDefinition
               WithdrawLimitsResponse: MessageTypeDefinition
             }

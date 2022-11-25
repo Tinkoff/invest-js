@@ -11,6 +11,7 @@ export interface OrderTrades {
   'figi'?: (string);
   'trades'?: (_tinkoff_public_invest_api_contract_v1_OrderTrade)[];
   'accountId'?: (string);
+  'instrumentUid'?: (string);
 }
 
 export interface OrderTrades__Output {
@@ -20,4 +21,5 @@ export interface OrderTrades__Output {
   'figi': (string);
   'trades': (_tinkoff_public_invest_api_contract_v1_OrderTrade__Output)[];
   'accountId': (string);
+  'instrumentUid': (string);
 }

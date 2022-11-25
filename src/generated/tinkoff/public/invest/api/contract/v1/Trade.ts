@@ -11,6 +11,7 @@ export interface Trade {
   'price'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'quantity'?: (number | string | Long);
   'time'?: (_google_protobuf_Timestamp | null);
+  'instrumentUid'?: (string);
 }
 
 export interface Trade__Output {
@@ -19,4 +20,5 @@ export interface Trade__Output {
   'price': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'quantity': (string);
   'time': (_google_protobuf_Timestamp__Output | null);
+  'instrumentUid': (string);
 }

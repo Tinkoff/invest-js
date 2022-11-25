@@ -37,6 +37,8 @@ import type { GetFuturesMarginResponse as _tinkoff_public_invest_api_contract_v1
 import type { InstrumentRequest as _tinkoff_public_invest_api_contract_v1_InstrumentRequest, InstrumentRequest__Output as _tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/InstrumentRequest';
 import type { InstrumentResponse as _tinkoff_public_invest_api_contract_v1_InstrumentResponse, InstrumentResponse__Output as _tinkoff_public_invest_api_contract_v1_InstrumentResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/InstrumentResponse';
 import type { InstrumentsRequest as _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, InstrumentsRequest__Output as _tinkoff_public_invest_api_contract_v1_InstrumentsRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/InstrumentsRequest';
+import type { OptionResponse as _tinkoff_public_invest_api_contract_v1_OptionResponse, OptionResponse__Output as _tinkoff_public_invest_api_contract_v1_OptionResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/OptionResponse';
+import type { OptionsResponse as _tinkoff_public_invest_api_contract_v1_OptionsResponse, OptionsResponse__Output as _tinkoff_public_invest_api_contract_v1_OptionsResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/OptionsResponse';
 import type { ShareResponse as _tinkoff_public_invest_api_contract_v1_ShareResponse, ShareResponse__Output as _tinkoff_public_invest_api_contract_v1_ShareResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/ShareResponse';
 import type { SharesResponse as _tinkoff_public_invest_api_contract_v1_SharesResponse, SharesResponse__Output as _tinkoff_public_invest_api_contract_v1_SharesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/SharesResponse';
 import type { TradingSchedulesRequest as _tinkoff_public_invest_api_contract_v1_TradingSchedulesRequest, TradingSchedulesRequest__Output as _tinkoff_public_invest_api_contract_v1_TradingSchedulesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/TradingSchedulesRequest';
@@ -232,6 +234,24 @@ export interface InstrumentsServiceClient extends grpc.Client {
   getInstrumentBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_InstrumentResponse__Output>): grpc.ClientUnaryCall;
   getInstrumentBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_InstrumentResponse__Output>): grpc.ClientUnaryCall;
   
+  OptionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  OptionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  OptionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  OptionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  optionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  optionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  optionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  optionBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionResponse__Output>): grpc.ClientUnaryCall;
+  
+  Options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  Options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  Options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  Options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  options(argument: _tinkoff_public_invest_api_contract_v1_InstrumentsRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>): grpc.ClientUnaryCall;
+  
   ShareBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_ShareResponse__Output>): grpc.ClientUnaryCall;
   ShareBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_ShareResponse__Output>): grpc.ClientUnaryCall;
   ShareBy(argument: _tinkoff_public_invest_api_contract_v1_InstrumentRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_ShareResponse__Output>): grpc.ClientUnaryCall;
@@ -304,6 +324,10 @@ export interface InstrumentsServiceHandlers extends grpc.UntypedServiceImplement
   
   GetInstrumentBy: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_InstrumentResponse>;
   
+  OptionBy: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_OptionResponse>;
+  
+  Options: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_InstrumentsRequest__Output, _tinkoff_public_invest_api_contract_v1_OptionsResponse>;
+  
   ShareBy: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_ShareResponse>;
   
   Shares: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_InstrumentsRequest__Output, _tinkoff_public_invest_api_contract_v1_SharesResponse>;
@@ -334,6 +358,8 @@ export interface InstrumentsServiceDefinition extends grpc.ServiceDefinition {
   GetFavorites: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetFavoritesRequest, _tinkoff_public_invest_api_contract_v1_GetFavoritesResponse, _tinkoff_public_invest_api_contract_v1_GetFavoritesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetFavoritesResponse__Output>
   GetFuturesMargin: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetFuturesMarginRequest, _tinkoff_public_invest_api_contract_v1_GetFuturesMarginResponse, _tinkoff_public_invest_api_contract_v1_GetFuturesMarginRequest__Output, _tinkoff_public_invest_api_contract_v1_GetFuturesMarginResponse__Output>
   GetInstrumentBy: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentRequest, _tinkoff_public_invest_api_contract_v1_InstrumentResponse, _tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_InstrumentResponse__Output>
+  OptionBy: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentRequest, _tinkoff_public_invest_api_contract_v1_OptionResponse, _tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_OptionResponse__Output>
+  Options: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentsRequest, _tinkoff_public_invest_api_contract_v1_OptionsResponse, _tinkoff_public_invest_api_contract_v1_InstrumentsRequest__Output, _tinkoff_public_invest_api_contract_v1_OptionsResponse__Output>
   ShareBy: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentRequest, _tinkoff_public_invest_api_contract_v1_ShareResponse, _tinkoff_public_invest_api_contract_v1_InstrumentRequest__Output, _tinkoff_public_invest_api_contract_v1_ShareResponse__Output>
   Shares: MethodDefinition<_tinkoff_public_invest_api_contract_v1_InstrumentsRequest, _tinkoff_public_invest_api_contract_v1_SharesResponse, _tinkoff_public_invest_api_contract_v1_InstrumentsRequest__Output, _tinkoff_public_invest_api_contract_v1_SharesResponse__Output>
   TradingSchedules: MethodDefinition<_tinkoff_public_invest_api_contract_v1_TradingSchedulesRequest, _tinkoff_public_invest_api_contract_v1_TradingSchedulesResponse, _tinkoff_public_invest_api_contract_v1_TradingSchedulesRequest__Output, _tinkoff_public_invest_api_contract_v1_TradingSchedulesResponse__Output>

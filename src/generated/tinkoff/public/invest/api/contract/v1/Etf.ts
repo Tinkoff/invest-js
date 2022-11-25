@@ -39,6 +39,7 @@ export interface Etf {
   'realExchange'?: (_tinkoff_public_invest_api_contract_v1_RealExchange | keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
   'positionUid'?: (string);
   'forIisFlag'?: (boolean);
+  'forQualInvestorFlag'?: (boolean);
   'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
   'first_1dayCandleDate'?: (_google_protobuf_Timestamp | null);
 }
@@ -77,6 +78,7 @@ export interface Etf__Output {
   'realExchange': (keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
   'positionUid': (string);
   'forIisFlag': (boolean);
+  'forQualInvestorFlag': (boolean);
   'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);
   'first_1dayCandleDate': (_google_protobuf_Timestamp__Output | null);
 }

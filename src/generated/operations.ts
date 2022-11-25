@@ -58,12 +58,21 @@ export interface ProtoGrpcType {
               PortfolioStreamResponse: MessageTypeDefinition
               PortfolioSubscriptionResult: MessageTypeDefinition
               PortfolioSubscriptionStatus: EnumTypeDefinition
+              PositionData: MessageTypeDefinition
+              PositionsAccountSubscriptionStatus: EnumTypeDefinition
               PositionsFutures: MessageTypeDefinition
+              PositionsMoney: MessageTypeDefinition
+              PositionsOptions: MessageTypeDefinition
               PositionsRequest: MessageTypeDefinition
               PositionsResponse: MessageTypeDefinition
               PositionsSecurities: MessageTypeDefinition
+              PositionsStreamRequest: MessageTypeDefinition
+              PositionsStreamResponse: MessageTypeDefinition
+              PositionsSubscriptionResult: MessageTypeDefinition
+              PositionsSubscriptionStatus: MessageTypeDefinition
               Quotation: MessageTypeDefinition
               SecurityTradingStatus: EnumTypeDefinition
+              VirtualPortfolioPosition: MessageTypeDefinition
               WithdrawLimitsRequest: MessageTypeDefinition
               WithdrawLimitsResponse: MessageTypeDefinition
             }

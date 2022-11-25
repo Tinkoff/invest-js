@@ -9,6 +9,7 @@ export interface GetMarginAttributesResponse {
   'minimalMargin'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
   'fundsSufficiencyLevel'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'amountOfMissingFunds'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
+  'correctedMargin'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
 }
 
 export interface GetMarginAttributesResponse__Output {
@@ -17,4 +18,5 @@ export interface GetMarginAttributesResponse__Output {
   'minimalMargin': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
   'fundsSufficiencyLevel': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'amountOfMissingFunds': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
+  'correctedMargin': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
 }

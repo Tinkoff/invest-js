@@ -26,6 +26,7 @@ export interface Bond {
   'couponQuantityPerYear'?: (number);
   'maturityDate'?: (_google_protobuf_Timestamp | null);
   'nominal'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
+  'initialNominal'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
   'stateRegDate'?: (_google_protobuf_Timestamp | null);
   'placementDate'?: (_google_protobuf_Timestamp | null);
   'placementPrice'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
@@ -49,6 +50,7 @@ export interface Bond {
   'realExchange'?: (_tinkoff_public_invest_api_contract_v1_RealExchange | keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
   'positionUid'?: (string);
   'forIisFlag'?: (boolean);
+  'forQualInvestorFlag'?: (boolean);
   'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
   'first_1dayCandleDate'?: (_google_protobuf_Timestamp | null);
 }
@@ -72,6 +74,7 @@ export interface Bond__Output {
   'couponQuantityPerYear': (number);
   'maturityDate': (_google_protobuf_Timestamp__Output | null);
   'nominal': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
+  'initialNominal': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
   'stateRegDate': (_google_protobuf_Timestamp__Output | null);
   'placementDate': (_google_protobuf_Timestamp__Output | null);
   'placementPrice': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
@@ -95,6 +98,7 @@ export interface Bond__Output {
   'realExchange': (keyof typeof _tinkoff_public_invest_api_contract_v1_RealExchange);
   'positionUid': (string);
   'forIisFlag': (boolean);
+  'forQualInvestorFlag': (boolean);
   'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);
   'first_1dayCandleDate': (_google_protobuf_Timestamp__Output | null);
 }
