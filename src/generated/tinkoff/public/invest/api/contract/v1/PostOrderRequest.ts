@@ -13,6 +13,7 @@ export interface PostOrderRequest {
   'accountId'?: (string);
   'orderType'?: (_tinkoff_public_invest_api_contract_v1_OrderType | keyof typeof _tinkoff_public_invest_api_contract_v1_OrderType);
   'orderId'?: (string);
+  'instrumentId'?: (string);
 }
 
 export interface PostOrderRequest__Output {
@@ -23,4 +24,5 @@ export interface PostOrderRequest__Output {
   'accountId': (string);
   'orderType': (keyof typeof _tinkoff_public_invest_api_contract_v1_OrderType);
   'orderId': (string);
+  'instrumentId': (string);
 }

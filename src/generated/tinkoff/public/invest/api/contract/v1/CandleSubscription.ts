@@ -7,10 +7,12 @@ export interface CandleSubscription {
   'figi'?: (string);
   'interval'?: (_tinkoff_public_invest_api_contract_v1_SubscriptionInterval | keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionInterval);
   'subscriptionStatus'?: (_tinkoff_public_invest_api_contract_v1_SubscriptionStatus | keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionStatus);
+  'instrumentUid'?: (string);
 }
 
 export interface CandleSubscription__Output {
   'figi': (string);
   'interval': (keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionInterval);
   'subscriptionStatus': (keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionStatus);
+  'instrumentUid': (string);
 }

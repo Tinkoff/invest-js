@@ -26,6 +26,8 @@ export interface ProtoGrpcType {
               CandleSubscription: MessageTypeDefinition
               GetCandlesRequest: MessageTypeDefinition
               GetCandlesResponse: MessageTypeDefinition
+              GetClosePricesRequest: MessageTypeDefinition
+              GetClosePricesResponse: MessageTypeDefinition
               GetLastPricesRequest: MessageTypeDefinition
               GetLastPricesResponse: MessageTypeDefinition
               GetLastTradesRequest: MessageTypeDefinition
@@ -38,6 +40,8 @@ export interface ProtoGrpcType {
               HistoricCandle: MessageTypeDefinition
               InfoInstrument: MessageTypeDefinition
               InfoSubscription: MessageTypeDefinition
+              InstrumentClosePriceRequest: MessageTypeDefinition
+              InstrumentClosePriceResponse: MessageTypeDefinition
               LastPrice: MessageTypeDefinition
               LastPriceInstrument: MessageTypeDefinition
               LastPriceSubscription: MessageTypeDefinition

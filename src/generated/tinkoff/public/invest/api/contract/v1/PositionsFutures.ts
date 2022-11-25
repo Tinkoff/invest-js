@@ -6,10 +6,14 @@ export interface PositionsFutures {
   'figi'?: (string);
   'blocked'?: (number | string | Long);
   'balance'?: (number | string | Long);
+  'positionUid'?: (string);
+  'instrumentUid'?: (string);
 }
 
 export interface PositionsFutures__Output {
   'figi': (string);
   'blocked': (string);
   'balance': (string);
+  'positionUid': (string);
+  'instrumentUid': (string);
 }

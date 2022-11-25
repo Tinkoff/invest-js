@@ -27,6 +27,7 @@ export interface OrderState {
   'currency'?: (string);
   'orderType'?: (_tinkoff_public_invest_api_contract_v1_OrderType | keyof typeof _tinkoff_public_invest_api_contract_v1_OrderType);
   'orderDate'?: (_google_protobuf_Timestamp | null);
+  'instrumentUid'?: (string);
 }
 
 export interface OrderState__Output {
@@ -48,4 +49,5 @@ export interface OrderState__Output {
   'currency': (string);
   'orderType': (keyof typeof _tinkoff_public_invest_api_contract_v1_OrderType);
   'orderDate': (_google_protobuf_Timestamp__Output | null);
+  'instrumentUid': (string);
 }

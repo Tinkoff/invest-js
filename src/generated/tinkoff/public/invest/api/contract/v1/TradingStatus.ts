@@ -9,6 +9,7 @@ export interface TradingStatus {
   'time'?: (_google_protobuf_Timestamp | null);
   'limitOrderAvailableFlag'?: (boolean);
   'marketOrderAvailableFlag'?: (boolean);
+  'instrumentUid'?: (string);
 }
 
 export interface TradingStatus__Output {
@@ -17,4 +18,5 @@ export interface TradingStatus__Output {
   'time': (_google_protobuf_Timestamp__Output | null);
   'limitOrderAvailableFlag': (boolean);
   'marketOrderAvailableFlag': (boolean);
+  'instrumentUid': (string);
 }

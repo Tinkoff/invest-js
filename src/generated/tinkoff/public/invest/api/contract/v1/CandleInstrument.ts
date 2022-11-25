@@ -5,9 +5,11 @@ import type { SubscriptionInterval as _tinkoff_public_invest_api_contract_v1_Sub
 export interface CandleInstrument {
   'figi'?: (string);
   'interval'?: (_tinkoff_public_invest_api_contract_v1_SubscriptionInterval | keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionInterval);
+  'instrumentId'?: (string);
 }
 
 export interface CandleInstrument__Output {
   'figi': (string);
   'interval': (keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionInterval);
+  'instrumentId': (string);
 }

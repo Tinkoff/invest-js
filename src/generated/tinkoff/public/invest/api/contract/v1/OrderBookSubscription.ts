@@ -6,10 +6,12 @@ export interface OrderBookSubscription {
   'figi'?: (string);
   'depth'?: (number);
   'subscriptionStatus'?: (_tinkoff_public_invest_api_contract_v1_SubscriptionStatus | keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionStatus);
+  'instrumentUid'?: (string);
 }
 
 export interface OrderBookSubscription__Output {
   'figi': (string);
   'depth': (number);
   'subscriptionStatus': (keyof typeof _tinkoff_public_invest_api_contract_v1_SubscriptionStatus);
+  'instrumentUid': (string);
 }
