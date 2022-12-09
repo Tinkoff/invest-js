@@ -35,6 +35,7 @@ export interface OperationItem {
   'cancelDateTime'?: (_google_protobuf_Timestamp | null);
   'cancelReason'?: (string);
   'tradesInfo'?: (_tinkoff_public_invest_api_contract_v1_OperationItemTrades | null);
+  'assetUid'?: (string);
 }
 
 export interface OperationItem__Output {
@@ -63,4 +64,5 @@ export interface OperationItem__Output {
   'cancelDateTime': (_google_protobuf_Timestamp__Output | null);
   'cancelReason': (string);
   'tradesInfo': (_tinkoff_public_invest_api_contract_v1_OperationItemTrades__Output | null);
+  'assetUid': (string);
 }

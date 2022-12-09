@@ -18,6 +18,7 @@ export interface StopOrder {
   'expirationTime'?: (_google_protobuf_Timestamp | null);
   'price'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
   'stopPrice'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
+  'instrumentUid'?: (string);
 }
 
 export interface StopOrder__Output {
@@ -32,4 +33,5 @@ export interface StopOrder__Output {
   'expirationTime': (_google_protobuf_Timestamp__Output | null);
   'price': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
   'stopPrice': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
+  'instrumentUid': (string);
 }

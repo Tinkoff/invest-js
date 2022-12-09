@@ -42,6 +42,8 @@ export interface Future {
   'basicAssetPositionUid'?: (string);
   'forIisFlag'?: (boolean);
   'forQualInvestorFlag'?: (boolean);
+  'weekendFlag'?: (boolean);
+  'blockedTcaFlag'?: (boolean);
   'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
   'first_1dayCandleDate'?: (_google_protobuf_Timestamp | null);
 }
@@ -83,6 +85,8 @@ export interface Future__Output {
   'basicAssetPositionUid': (string);
   'forIisFlag': (boolean);
   'forQualInvestorFlag': (boolean);
+  'weekendFlag': (boolean);
+  'blockedTcaFlag': (boolean);
   'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);
   'first_1dayCandleDate': (_google_protobuf_Timestamp__Output | null);
 }

@@ -52,6 +52,8 @@ export interface Option {
   'buyAvailableFlag'?: (boolean);
   'sellAvailableFlag'?: (boolean);
   'forQualInvestorFlag'?: (boolean);
+  'weekendFlag'?: (boolean);
+  'blockedTcaFlag'?: (boolean);
 }
 
 export interface Option__Output {
@@ -96,4 +98,6 @@ export interface Option__Output {
   'buyAvailableFlag': (boolean);
   'sellAvailableFlag': (boolean);
   'forQualInvestorFlag': (boolean);
+  'weekendFlag': (boolean);
+  'blockedTcaFlag': (boolean);
 }

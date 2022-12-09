@@ -17,6 +17,7 @@ export interface PostStopOrderRequest {
   'expirationType'?: (_tinkoff_public_invest_api_contract_v1_StopOrderExpirationType | keyof typeof _tinkoff_public_invest_api_contract_v1_StopOrderExpirationType);
   'stopOrderType'?: (_tinkoff_public_invest_api_contract_v1_StopOrderType | keyof typeof _tinkoff_public_invest_api_contract_v1_StopOrderType);
   'expireDate'?: (_google_protobuf_Timestamp | null);
+  'instrumentId'?: (string);
 }
 
 export interface PostStopOrderRequest__Output {
@@ -29,4 +30,5 @@ export interface PostStopOrderRequest__Output {
   'expirationType': (keyof typeof _tinkoff_public_invest_api_contract_v1_StopOrderExpirationType);
   'stopOrderType': (keyof typeof _tinkoff_public_invest_api_contract_v1_StopOrderType);
   'expireDate': (_google_protobuf_Timestamp__Output | null);
+  'instrumentId': (string);
 }
