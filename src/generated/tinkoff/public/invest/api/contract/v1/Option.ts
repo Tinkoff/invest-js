@@ -54,6 +54,7 @@ export interface Option {
   'forQualInvestorFlag'?: (boolean);
   'weekendFlag'?: (boolean);
   'blockedTcaFlag'?: (boolean);
+  'apiTradeAvailableFlag'?: (boolean);
 }
 
 export interface Option__Output {
@@ -100,4 +101,5 @@ export interface Option__Output {
   'forQualInvestorFlag': (boolean);
   'weekendFlag': (boolean);
   'blockedTcaFlag': (boolean);
+  'apiTradeAvailableFlag': (boolean);
 }
