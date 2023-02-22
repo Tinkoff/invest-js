@@ -23,6 +23,7 @@ export interface OperationItem {
   'figi'?: (string);
   'instrumentType'?: (string);
   'instrumentKind'?: (_tinkoff_public_invest_api_contract_v1_InstrumentType | keyof typeof _tinkoff_public_invest_api_contract_v1_InstrumentType);
+  'positionUid'?: (string);
   'payment'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
   'price'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
   'commission'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
@@ -52,6 +53,7 @@ export interface OperationItem__Output {
   'figi': (string);
   'instrumentType': (string);
   'instrumentKind': (keyof typeof _tinkoff_public_invest_api_contract_v1_InstrumentType);
+  'positionUid': (string);
   'payment': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
   'price': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
   'commission': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);

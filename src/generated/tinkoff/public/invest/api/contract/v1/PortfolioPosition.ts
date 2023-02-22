@@ -15,6 +15,7 @@ export interface PortfolioPosition {
   'averagePositionPriceFifo'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
   'quantityLots'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'blocked'?: (boolean);
+  'blockedLots'?: (_tinkoff_public_invest_api_contract_v1_Quotation | null);
   'positionUid'?: (string);
   'instrumentUid'?: (string);
   'varMargin'?: (_tinkoff_public_invest_api_contract_v1_MoneyValue | null);
@@ -33,6 +34,7 @@ export interface PortfolioPosition__Output {
   'averagePositionPriceFifo': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);
   'quantityLots': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'blocked': (boolean);
+  'blockedLots': (_tinkoff_public_invest_api_contract_v1_Quotation__Output | null);
   'positionUid': (string);
   'instrumentUid': (string);
   'varMargin': (_tinkoff_public_invest_api_contract_v1_MoneyValue__Output | null);

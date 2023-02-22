@@ -5,6 +5,7 @@ import type { AssetBond as _tinkoff_public_invest_api_contract_v1_AssetBond, Ass
 import type { AssetStructuredProduct as _tinkoff_public_invest_api_contract_v1_AssetStructuredProduct, AssetStructuredProduct__Output as _tinkoff_public_invest_api_contract_v1_AssetStructuredProduct__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/AssetStructuredProduct';
 import type { AssetEtf as _tinkoff_public_invest_api_contract_v1_AssetEtf, AssetEtf__Output as _tinkoff_public_invest_api_contract_v1_AssetEtf__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/AssetEtf';
 import type { AssetClearingCertificate as _tinkoff_public_invest_api_contract_v1_AssetClearingCertificate, AssetClearingCertificate__Output as _tinkoff_public_invest_api_contract_v1_AssetClearingCertificate__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/AssetClearingCertificate';
+import type { InstrumentType as _tinkoff_public_invest_api_contract_v1_InstrumentType } from '../../../../../../tinkoff/public/invest/api/contract/v1/InstrumentType';
 
 export interface AssetSecurity {
   'isin'?: (string);
@@ -14,6 +15,7 @@ export interface AssetSecurity {
   'sp'?: (_tinkoff_public_invest_api_contract_v1_AssetStructuredProduct | null);
   'etf'?: (_tinkoff_public_invest_api_contract_v1_AssetEtf | null);
   'clearingCertificate'?: (_tinkoff_public_invest_api_contract_v1_AssetClearingCertificate | null);
+  'instrumentKind'?: (_tinkoff_public_invest_api_contract_v1_InstrumentType | keyof typeof _tinkoff_public_invest_api_contract_v1_InstrumentType);
   'ext'?: "share"|"bond"|"sp"|"etf"|"clearingCertificate";
 }
 
@@ -25,5 +27,6 @@ export interface AssetSecurity__Output {
   'sp'?: (_tinkoff_public_invest_api_contract_v1_AssetStructuredProduct__Output | null);
   'etf'?: (_tinkoff_public_invest_api_contract_v1_AssetEtf__Output | null);
   'clearingCertificate'?: (_tinkoff_public_invest_api_contract_v1_AssetClearingCertificate__Output | null);
+  'instrumentKind': (keyof typeof _tinkoff_public_invest_api_contract_v1_InstrumentType);
   'ext': "share"|"bond"|"sp"|"etf"|"clearingCertificate";
 }

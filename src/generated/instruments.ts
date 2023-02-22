@@ -81,6 +81,7 @@ export interface ProtoGrpcType {
               InstrumentResponse: MessageTypeDefinition
               InstrumentShort: MessageTypeDefinition
               InstrumentStatus: EnumTypeDefinition
+              InstrumentType: EnumTypeDefinition
               InstrumentsRequest: MessageTypeDefinition
               InstrumentsService: SubtypeConstructor<typeof grpc.Client, _tinkoff_public_invest_api_contract_v1_InstrumentsServiceClient> & { service: _tinkoff_public_invest_api_contract_v1_InstrumentsServiceDefinition }
               MoneyValue: MessageTypeDefinition
@@ -94,6 +95,7 @@ export interface ProtoGrpcType {
               Ping: MessageTypeDefinition
               Quotation: MessageTypeDefinition
               RealExchange: EnumTypeDefinition
+              RiskLevel: EnumTypeDefinition
               SecurityTradingStatus: EnumTypeDefinition
               Share: MessageTypeDefinition
               ShareResponse: MessageTypeDefinition

@@ -25,6 +25,7 @@ export interface ProtoGrpcType {
               GetOrderStateRequest: MessageTypeDefinition
               GetOrdersRequest: MessageTypeDefinition
               GetOrdersResponse: MessageTypeDefinition
+              InstrumentType: EnumTypeDefinition
               MoneyValue: MessageTypeDefinition
               OrderDirection: EnumTypeDefinition
               OrderExecutionReportStatus: EnumTypeDefinition

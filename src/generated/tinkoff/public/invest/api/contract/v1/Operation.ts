@@ -23,6 +23,8 @@ export interface Operation {
   'operationType'?: (_tinkoff_public_invest_api_contract_v1_OperationType | keyof typeof _tinkoff_public_invest_api_contract_v1_OperationType);
   'trades'?: (_tinkoff_public_invest_api_contract_v1_OperationTrade)[];
   'assetUid'?: (string);
+  'positionUid'?: (string);
+  'instrumentUid'?: (string);
 }
 
 export interface Operation__Output {
@@ -41,4 +43,6 @@ export interface Operation__Output {
   'operationType': (keyof typeof _tinkoff_public_invest_api_contract_v1_OperationType);
   'trades': (_tinkoff_public_invest_api_contract_v1_OperationTrade__Output)[];
   'assetUid': (string);
+  'positionUid': (string);
+  'instrumentUid': (string);
 }

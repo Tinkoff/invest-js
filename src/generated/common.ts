@@ -18,6 +18,7 @@ export interface ProtoGrpcType {
         api: {
           contract: {
             v1: {
+              InstrumentType: EnumTypeDefinition
               MoneyValue: MessageTypeDefinition
               Ping: MessageTypeDefinition
               Quotation: MessageTypeDefinition

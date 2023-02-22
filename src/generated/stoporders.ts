@@ -23,6 +23,7 @@ export interface ProtoGrpcType {
               CancelStopOrderResponse: MessageTypeDefinition
               GetStopOrdersRequest: MessageTypeDefinition
               GetStopOrdersResponse: MessageTypeDefinition
+              InstrumentType: EnumTypeDefinition
               MoneyValue: MessageTypeDefinition
               Ping: MessageTypeDefinition
               PostStopOrderRequest: MessageTypeDefinition

@@ -16,6 +16,8 @@ export interface TradingDay {
   'clearingEndTime'?: (_google_protobuf_Timestamp | null);
   'premarketStartTime'?: (_google_protobuf_Timestamp | null);
   'premarketEndTime'?: (_google_protobuf_Timestamp | null);
+  'closingAuctionStartTime'?: (_google_protobuf_Timestamp | null);
+  'openingAuctionEndTime'?: (_google_protobuf_Timestamp | null);
 }
 
 export interface TradingDay__Output {
@@ -32,4 +34,6 @@ export interface TradingDay__Output {
   'clearingEndTime': (_google_protobuf_Timestamp__Output | null);
   'premarketStartTime': (_google_protobuf_Timestamp__Output | null);
   'premarketEndTime': (_google_protobuf_Timestamp__Output | null);
+  'closingAuctionStartTime': (_google_protobuf_Timestamp__Output | null);
+  'openingAuctionEndTime': (_google_protobuf_Timestamp__Output | null);
 }

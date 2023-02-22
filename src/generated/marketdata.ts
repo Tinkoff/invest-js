@@ -37,11 +37,14 @@ export interface ProtoGrpcType {
               GetOrderBookResponse: MessageTypeDefinition
               GetTradingStatusRequest: MessageTypeDefinition
               GetTradingStatusResponse: MessageTypeDefinition
+              GetTradingStatusesRequest: MessageTypeDefinition
+              GetTradingStatusesResponse: MessageTypeDefinition
               HistoricCandle: MessageTypeDefinition
               InfoInstrument: MessageTypeDefinition
               InfoSubscription: MessageTypeDefinition
               InstrumentClosePriceRequest: MessageTypeDefinition
               InstrumentClosePriceResponse: MessageTypeDefinition
+              InstrumentType: EnumTypeDefinition
               LastPrice: MessageTypeDefinition
               LastPriceInstrument: MessageTypeDefinition
               LastPriceSubscription: MessageTypeDefinition

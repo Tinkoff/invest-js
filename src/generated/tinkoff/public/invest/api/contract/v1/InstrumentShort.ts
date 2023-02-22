@@ -1,5 +1,6 @@
 // Original file: investAPI/src/docs/contracts/instruments.proto
 
+import type { InstrumentType as _tinkoff_public_invest_api_contract_v1_InstrumentType } from '../../../../../../tinkoff/public/invest/api/contract/v1/InstrumentType';
 import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _google_protobuf_Timestamp__Output } from '../../../../../../google/protobuf/Timestamp';
 
 export interface InstrumentShort {
@@ -11,6 +12,7 @@ export interface InstrumentShort {
   'name'?: (string);
   'uid'?: (string);
   'positionUid'?: (string);
+  'instrumentKind'?: (_tinkoff_public_invest_api_contract_v1_InstrumentType | keyof typeof _tinkoff_public_invest_api_contract_v1_InstrumentType);
   'apiTradeAvailableFlag'?: (boolean);
   'forIisFlag'?: (boolean);
   'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
@@ -29,6 +31,7 @@ export interface InstrumentShort__Output {
   'name': (string);
   'uid': (string);
   'positionUid': (string);
+  'instrumentKind': (keyof typeof _tinkoff_public_invest_api_contract_v1_InstrumentType);
   'apiTradeAvailableFlag': (boolean);
   'forIisFlag': (boolean);
   'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);

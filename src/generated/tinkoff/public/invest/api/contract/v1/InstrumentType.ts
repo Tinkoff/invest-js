@@ -1,4 +1,4 @@
-// Original file: investAPI/src/docs/contracts/operations.proto
+// Original file: investAPI/src/docs/contracts/common.proto
 
 export enum InstrumentType {
   INSTRUMENT_TYPE_UNSPECIFIED = 0,
@@ -9,4 +9,5 @@ export enum InstrumentType {
   INSTRUMENT_TYPE_FUTURES = 5,
   INSTRUMENT_TYPE_SP = 6,
   INSTRUMENT_TYPE_OPTION = 7,
+  INSTRUMENT_TYPE_CLEARING_CERTIFICATE = 8,
 }

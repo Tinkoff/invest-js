@@ -14,6 +14,8 @@ import type { GetOrderBookRequest as _tinkoff_public_invest_api_contract_v1_GetO
 import type { GetOrderBookResponse as _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse, GetOrderBookResponse__Output as _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetOrderBookResponse';
 import type { GetTradingStatusRequest as _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest, GetTradingStatusRequest__Output as _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetTradingStatusRequest';
 import type { GetTradingStatusResponse as _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse, GetTradingStatusResponse__Output as _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetTradingStatusResponse';
+import type { GetTradingStatusesRequest as _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, GetTradingStatusesRequest__Output as _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetTradingStatusesRequest';
+import type { GetTradingStatusesResponse as _tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse, GetTradingStatusesResponse__Output as _tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/GetTradingStatusesResponse';
 
 export interface MarketDataServiceClient extends grpc.Client {
   GetCandles(argument: _tinkoff_public_invest_api_contract_v1_GetCandlesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetCandlesResponse__Output>): grpc.ClientUnaryCall;
@@ -70,6 +72,15 @@ export interface MarketDataServiceClient extends grpc.Client {
   getTradingStatus(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse__Output>): grpc.ClientUnaryCall;
   getTradingStatus(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse__Output>): grpc.ClientUnaryCall;
   
+  GetTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  GetTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  GetTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  GetTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  getTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, metadata: grpc.Metadata, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  getTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, metadata: grpc.Metadata, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  getTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, options: grpc.CallOptions, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  getTradingStatuses(argument: _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, callback: grpc.requestCallback<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>): grpc.ClientUnaryCall;
+  
 }
 
 export interface MarketDataServiceHandlers extends grpc.UntypedServiceImplementation {
@@ -85,6 +96,8 @@ export interface MarketDataServiceHandlers extends grpc.UntypedServiceImplementa
   
   GetTradingStatus: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest__Output, _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse>;
   
+  GetTradingStatuses: grpc.handleUnaryCall<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse>;
+  
 }
 
 export interface MarketDataServiceDefinition extends grpc.ServiceDefinition {
@@ -94,4 +107,5 @@ export interface MarketDataServiceDefinition extends grpc.ServiceDefinition {
   GetLastTrades: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetLastTradesRequest, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse, _tinkoff_public_invest_api_contract_v1_GetLastTradesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetLastTradesResponse__Output>
   GetOrderBook: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetOrderBookRequest, _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse, _tinkoff_public_invest_api_contract_v1_GetOrderBookRequest__Output, _tinkoff_public_invest_api_contract_v1_GetOrderBookResponse__Output>
   GetTradingStatus: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest, _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse, _tinkoff_public_invest_api_contract_v1_GetTradingStatusRequest__Output, _tinkoff_public_invest_api_contract_v1_GetTradingStatusResponse__Output>
+  GetTradingStatuses: MethodDefinition<_tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest, _tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse, _tinkoff_public_invest_api_contract_v1_GetTradingStatusesRequest__Output, _tinkoff_public_invest_api_contract_v1_GetTradingStatusesResponse__Output>
 }

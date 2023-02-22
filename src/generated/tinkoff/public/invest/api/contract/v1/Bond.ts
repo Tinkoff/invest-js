@@ -5,6 +5,7 @@ import type { Timestamp as _google_protobuf_Timestamp, Timestamp__Output as _goo
 import type { MoneyValue as _tinkoff_public_invest_api_contract_v1_MoneyValue, MoneyValue__Output as _tinkoff_public_invest_api_contract_v1_MoneyValue__Output } from '../../../../../../tinkoff/public/invest/api/contract/v1/MoneyValue';
 import type { SecurityTradingStatus as _tinkoff_public_invest_api_contract_v1_SecurityTradingStatus } from '../../../../../../tinkoff/public/invest/api/contract/v1/SecurityTradingStatus';
 import type { RealExchange as _tinkoff_public_invest_api_contract_v1_RealExchange } from '../../../../../../tinkoff/public/invest/api/contract/v1/RealExchange';
+import type { RiskLevel as _tinkoff_public_invest_api_contract_v1_RiskLevel } from '../../../../../../tinkoff/public/invest/api/contract/v1/RiskLevel';
 import type { Long } from '@grpc/proto-loader';
 
 export interface Bond {
@@ -53,8 +54,10 @@ export interface Bond {
   'forQualInvestorFlag'?: (boolean);
   'weekendFlag'?: (boolean);
   'blockedTcaFlag'?: (boolean);
+  'subordinatedFlag'?: (boolean);
   'first_1minCandleDate'?: (_google_protobuf_Timestamp | null);
   'first_1dayCandleDate'?: (_google_protobuf_Timestamp | null);
+  'riskLevel'?: (_tinkoff_public_invest_api_contract_v1_RiskLevel | keyof typeof _tinkoff_public_invest_api_contract_v1_RiskLevel);
 }
 
 export interface Bond__Output {
@@ -103,6 +106,8 @@ export interface Bond__Output {
   'forQualInvestorFlag': (boolean);
   'weekendFlag': (boolean);
   'blockedTcaFlag': (boolean);
+  'subordinatedFlag': (boolean);
   'first_1minCandleDate': (_google_protobuf_Timestamp__Output | null);
   'first_1dayCandleDate': (_google_protobuf_Timestamp__Output | null);
+  'riskLevel': (keyof typeof _tinkoff_public_invest_api_contract_v1_RiskLevel);
 }

@@ -31,6 +31,7 @@ export interface ProtoGrpcType {
               GetMarginAttributesResponse: MessageTypeDefinition
               GetUserTariffRequest: MessageTypeDefinition
               GetUserTariffResponse: MessageTypeDefinition
+              InstrumentType: EnumTypeDefinition
               MoneyValue: MessageTypeDefinition
               Ping: MessageTypeDefinition
               Quotation: MessageTypeDefinition
